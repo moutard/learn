@@ -4,14 +4,15 @@
 // struct node * n = NULL;
 // instead
 // Node * n = NULL;
-typedef struct node {
-  int i;
-  struct Node * next;
-} Node;
+typedef struct {
+  int value;
+  struct LinkedList * next;
+} LinkedList;
+
 
 int main(){
   // A malloc so you need a free.
-  Node * n = malloc(sizeof(Node));
+  LinkedList *n = malloc(sizeof(LinkedList));
 
   free(n);
   return 0;
