@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/usr/local/rmoutard/learn/cpp/jollyjumper/jolly_jumper_tests.cpp
+jolly_jumper.cpp
+/usr/local/rmoutard/learn/cpp/jollyjumper/jolly_jumper.cpp
+gtest/gtest.h
+-
+
