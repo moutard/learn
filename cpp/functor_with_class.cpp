@@ -2,6 +2,8 @@
 #include <iterator>
 #include <algorithm>
 
+// functor is pretty much just a class which defines the operator(). That lets
+// you create objects which "look like" a function.
 class CountFrom {
 private:
   int &count;
