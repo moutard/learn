@@ -4,3 +4,11 @@
 gtest/
 runTests
 a.out
+*.bin
+*.cmake
+*.log
+*.make
+*.internal
+*.marks
+CMakeFiles/
+Makefile
