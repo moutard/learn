@@ -14,6 +14,7 @@ class Derivated : public Base {
   private:
     int y;
   public:
+    //int getPrivate(){return _private;} // Error ! can't access private form a derivated class.
     void setProtected(int i){_protected = i;} // protected is accessible by the derivated class inside the class.
 };
 
