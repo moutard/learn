@@ -1,6 +1,6 @@
 #ifndef RBTREE_H
 #define RBTREE_H
-
+#include <stdlib.h>
 #include <vector>
 using namespace std;
 class RBTreeNode {
@@ -22,7 +22,6 @@ public:
     }
     RBTreeNode * getLeft(){return left;}
     RBTreeNode * getRight(){return right;}
-private:
     int value;
     int color;
 
@@ -40,7 +39,7 @@ public:
     ~RBTree();
     void insert(RBTreeNode * &node, int value);
     void preOrder();
-    void depthFirst(RBTreeNode * element);
+    void removeWithDepthFirst(RBTreeNode * &element);
 private:
     RBTreeNode * root;
     void preOrder(RBTreeNode * element);

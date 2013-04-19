@@ -14,20 +14,36 @@ RBTree::RBTree(const vector<int> &v){
     }
 }
 
-RBTree::~RBTree(){
-    depthFirst(root);
+/**
+ * We need to pass ht epointer as a reference because we want to modify it (and not whta it contains.)
+ * See c++ quizz for more informations.
+ */
+void RBTree::insert(RBTreeNode * &root, int value){
+    if(root == NULL){
+        RBTreeNode * newElement = new RBTreeNode(value);
+        root = newElement;
+        //cout << newElement->getValue() << endl;
+    } else if(root->getValue() < value) {
+        insert(root->right, value);
+    } else {
+        insert(root->left, value);
+    }
 }
 
-void RBTree::depthFirst(RBTreeNode * element){
-    cout << element->getValue() << endl;
-    if(element->getLeft()==NULL && element->getRight()==NULL){
+
+RBTree::~RBTree(){
+    removeWithDepthFirst(root);
+}
+
+void RBTree::removeWithDepthFirst(RBTreeNode * &element){
+  if(element != NULL){
+        RBTreeNode * right = element->getRight();
+        RBTreeNode * left = element->getLeft();
+        removeWithDepthFirst(right);
+        removeWithDepthFirst(left);
+        cout << "delete " << element->getValue() << endl;
         delete element;
-        element = NULL;
-    } else if(element->getLeft()==NULL){
-        depthFirst(element->getRight());
-    } else {
-        depthFirst(element->getLeft());
-    }
+  }
 }
 
 void RBTree::preOrder(){
@@ -42,14 +58,4 @@ void RBTree::preOrder(RBTreeNode * element){
     }
 }
 
-void RBTree::insert(RBTreeNode * root, int value){
-    if(root == NULL){
-        RBTreeNode * newElement = new RBTreeNode(value);
-        root = newElement;
-        cout << newElement->getValue() << endl;
-    } else if(root->getValue() < value) {
-        insert(root->getRight(), value);
-    } else {
-        insert(root->getLeft(), value);
-    }
-}
+
