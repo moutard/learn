@@ -40,6 +40,8 @@ public:
     void insert(RBTreeNode * &node, int value);
     void preOrder();
     void removeWithDepthFirst(RBTreeNode * &element);
+    void rotateLeft(RBTreeNode * &element);
+    void rotateRight(RBTreeNode * &element);
 private:
     RBTreeNode * root;
     void preOrder(RBTreeNode * element);

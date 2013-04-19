@@ -58,4 +58,6 @@ void RBTree::preOrder(RBTreeNode * element){
     }
 }
 
-
+void RBTree::rotateRight(RBTreeNode * &rootToRotate){
+  rootToRotate
+}
