@@ -10,9 +10,15 @@ class A(object):
 
   @staticmethod
   def my_method_static():
+    print "my_static_method"
+
+  def test(self):
+    my_function()
 
 if __name__ == "__main__":
   a = A()
   a.my_method()
+  # a.test() Doesn't work.
   A.my_method_static()
+
 
