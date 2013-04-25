@@ -24,7 +24,7 @@ class Tree {
     ~Tree();
 
     void add_to_tree(int _value);
-    void attach_node();
+    void attach_node(TreeNode *node);
     void in_order_no_recursion();
     void pre_order();
     void post_order();
@@ -37,35 +37,7 @@ class Tree {
     TreeNode *root;
 };
 
-
-
-int main() {
- int i;
- Tree * the_tree = new Tree();
-
-
- cout << "Enter a series of strings to be ordered alphabetically\n"
-      << "in a binary search tree. These strings can be last names\n"
-      << "or any other strings you wish to enter.\n\n"
-      << "Enter a blank string to end.\n\n";
-/* do {
-   cout << "Enter a string: ";
-   cin.get(i, 20);
-   cin.ignore(80,'\n');
-   if(strlen(i) != 0)
-    {
-     the_tree->add_to_tree(i);
-    }
-  } while(strlen(string) != 0);
-
- cout << "\nAn in-order traversal of the tree yields:\n";
- the_tree->in_order();
-*/
- return 0;
-}
-
-
-void TreeNode::TreeNode(int _value) {
+TreeNode::TreeNode(int _value) {
  // Initialize new node.
  value = _value;
  left = NULL;
@@ -92,9 +64,7 @@ void Tree::dispose_of_tree(TreeNode *current_node) {
 
 
 void Tree::add_to_tree(int _value) {
- TreeNode *new_node_ptr;
-
- new_node_ptr = new TreeNode(_value);
+ TreeNode *new_node_ptr = new TreeNode(_value);
 
  if(root == NULL) {
    root = new_node_ptr;
@@ -113,7 +83,7 @@ void Tree::attach_node(TreeNode *new_node_ptr) {
 
  while(search_ptr != NULL) {
    follow_ptr = search_ptr;
-   if(strcmp(new_node_ptr->string, search_ptr->string) < 0)
+   if(new_node_ptr->value <  search_ptr->value)
     {
      search_ptr = search_ptr->left;
     }
@@ -122,7 +92,7 @@ void Tree::attach_node(TreeNode *new_node_ptr) {
      search_ptr = search_ptr->right;
     }
   }
- if(strcmp(new_node_ptr->string, follow_ptr->string) < 0)
+ if(new_node_ptr->value < follow_ptr->value)
   {
    follow_ptr->left = new_node_ptr;
   }
@@ -132,7 +102,14 @@ void Tree::attach_node(TreeNode *new_node_ptr) {
   }
 }
 
-
+/**
+ * First, the current pointer is initialized to the root. Keep traversing to its
+ * left child while pushing visited nodes onto the stack. When you reach a NULL
+ * node (ie, you’ve reached a leaf node), you would pop off an element from the
+ * stack and set it to current. Now is the time to print current’s value. Then,
+ * current is set to its right child and repeat the process again. When the
+ * stack is empty, this means you’re done printing.
+ */
 void Tree::in_order_no_recursion() {
   TreeNode *current_node = root;
   stack<TreeNode *> s;
@@ -147,6 +124,7 @@ void Tree::in_order_no_recursion() {
         done = true;
       } else {
         current_node = s.top();
+        // The stack container in C++ void pop(). Doesnt return the item poped.
         s.pop();
         cout << current_node->value << endl;
         current_node = current_node->right;
@@ -154,3 +132,30 @@ void Tree::in_order_no_recursion() {
     }
   }
 }
+
+int main() {
+  Tree * the_tree = new Tree();
+  the_tree->add_to_tree(5);
+  the_tree->add_to_tree(3);
+  the_tree->add_to_tree(9);
+  the_tree->add_to_tree(7);
+  the_tree->add_to_tree(6);
+  the_tree->add_to_tree(2);
+
+  the_tree->in_order_no_recursion();
+  /* do {
+   cout << "Enter a string: ";
+   cin.get(i, 20);
+   cin.ignore(80,'\n');
+   if(strlen(i) != 0)
+    {
+     the_tree->add_to_tree(i);
+    }
+  } while(strlen(string) != 0);
+
+ cout << "\nAn in-order traversal of the tree yields:\n";
+ the_tree->in_order();
+*/
+ return 0;
+}
+
