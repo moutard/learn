@@ -1,11 +1,17 @@
-#include "shape.h"
 #include "square.h"
+#include "grid.h"
 #include <gtest/gtest.h>
 
-TEST(SquareRootTest, NegativeNos) {
+TEST(Square, getSize) {
   Square * s = new Square(5);
   ASSERT_EQ(5, s->getSize());
   delete s;
+}
+
+TEST(Grid, init) {
+  Grid * g = new Grid(5, 0);
+  ASSERT_EQ(5, g->getSize());
+  delete g;
 }
 
 int main(int argc, char **argv) {

@@ -1,3 +1,5 @@
+#include "shape.h"
+
 /**
  * Default constructor.
  */

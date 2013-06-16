@@ -1,7 +1,15 @@
-Square::Square(int _size) : size(_size) {
+#include "square.h"
 
+Square::Square(int _size) {
+  size = _size;
 };
 
-Square::getSize() {
+int Square::getSize() {
   return size;
 };
+
+Square::~Square() {
+
+};
+
+
