@@ -39,12 +39,15 @@ public:
     ~RBTree();
     void insert(RBTreeNode * &node, int value);
     void preOrder();
+    void inOrder();
     void removeWithDepthFirst(RBTreeNode * &element);
     void rotateLeft(RBTreeNode * &element);
     void rotateRight(RBTreeNode * &element);
+    void rotateRight();
 private:
     RBTreeNode * root;
     void preOrder(RBTreeNode * element);
+    void inOrder(RBTreeNode * element);
 };
 
 

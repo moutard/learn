@@ -48,16 +48,39 @@ void RBTree::removeWithDepthFirst(RBTreeNode * &element){
 
 void RBTree::preOrder(){
     preOrder(root);
+    cout << endl;
 }
 
 void RBTree::preOrder(RBTreeNode * element){
     if(element != NULL){
         preOrder(element->getLeft());
-        cout << element->getValue() << endl;
+        cout << element->getValue() << ", ";
         preOrder(element->getRight());
     }
 }
 
-void RBTree::rotateRight(RBTreeNode * &rootToRotate){
-  rootToRotate
+void RBTree::inOrder(){
+    inOrder(root);
+    cout << endl;
+}
+
+void RBTree::inOrder(RBTreeNode * element){
+    if(element != NULL){
+        cout << element->getValue() << ", ";
+        inOrder(element->getLeft());
+        inOrder(element->getRight());
+    }
+}
+
+
+void RBTree::rotateRight(){
+  rotateRight(root);
+}
+void RBTree::rotateRight(RBTreeNode * &pos){
+  RBTreeNode * b = pos->left;
+  pos->left = b->right;
+  b->right = pos;
+
+  pos = b;
+
 }
