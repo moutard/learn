@@ -9,5 +9,6 @@ add_executable(
   square.cpp
   grid.h
   grid.cpp
+  grid_template.h
   microsoft_tests.cpp)
 target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
