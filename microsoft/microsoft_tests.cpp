@@ -1,6 +1,7 @@
 #include "square.h"
 #include "grid.h"
 #include "grid_template.h"
+#include "grid_array.h"
 #include "template.h"
 #include <gtest/gtest.h>
 
@@ -27,6 +28,14 @@ TEST(Example, init) {
 TEST(GridTemplate, init) {
   GridTemplate<int> * g = new GridTemplate<int>(5, 0);
   ASSERT_EQ(5, g->getSize());
+  delete g;
+}
+
+
+TEST(GridArray, init) {
+  GridArray * g = new GridArray(5);
+  ASSERT_EQ(5, g->getSize());
+  ASSERT_EQ(0, g->getElement(0,0));
   delete g;
 }
 
