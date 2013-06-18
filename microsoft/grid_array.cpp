@@ -1,6 +1,8 @@
 #include "grid_array.h"
 #include <string>
 #include <sstream>
+#include <climits>
+#include <algorithm>    // std::min
 using namespace std;
 
 GridArray::GridArray(){
@@ -67,10 +69,10 @@ unsigned int GridArray::getSize() {
 };
 
 int GridArray::getElement(unsigned int x, unsigned int y) {
-  if(x < size && y < size){
+  if(x < size && y < size && x >= 0 && y >= 0) {
     return grid[x][y];
   } else {
-    cout << "boud limit." << endl;
+    return INT_MAX;
   }
 };
 
@@ -85,4 +87,21 @@ void GridArray::print(){
     }
     cout << endl;
   }
+};
+
+int GridArray::findShortestPath() {
+
+  // handle the first line differently to performance issue, avoid a if in the
+  // loop that should be true only once.
+  for (unsigned int j = 1; j < size; ++j) {
+    grid[0][j] += grid[0][j-1];
+  }
+
+  for (unsigned int i = 1; i < size; ++i) {
+    for (unsigned int j = 0; j < size; ++j) {
+      grid[i][j] += min(getElement(i - 1, j), getElement(i, j - 1));
+    }
+  }
+  print();
+  return grid[size - 1][size - 1];
 };

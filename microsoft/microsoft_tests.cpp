@@ -60,6 +60,20 @@ TEST(GridArray, initWithFile) {
   myfile.close();
 }
 
+TEST(GridArray, findShortestPath) {
+  ifstream myfile ("example_1.txt");
+  if (myfile.is_open()) {
+    GridArray * g = new GridArray(myfile);
+    ASSERT_EQ(3, g->findShortestPath());
+    delete g;
+  }
+  else {
+    cout << "Unable to open file";
+    FAIL();
+  }
+  myfile.close();
+}
+
 
 
 int main(int argc, char **argv) {

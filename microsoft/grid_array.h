@@ -14,6 +14,7 @@ class GridArray {
     int getElement(unsigned int x, unsigned int y);
     void setElement(unsigned int x, unsigned int y, int _value);
     void print();
+    int findShortestPath();
   private:
     unsigned int size;
     int ** grid;
