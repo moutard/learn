@@ -45,7 +45,7 @@ unsigned int oppositeDirection(unsigned int direction) {
  *  then stop the loop there is no solution to the maze. You can't find the
  *  cheese.
  */
-void FindCheese(Maze * maze) {
+void FindCheese(GridArray * maze) {
   // Vector that stores the path of the mouse.
   // Each element of the vector corresponds to a visited cell. the ith element
   // is the ith cell visited in the order of the path, and it contains the
@@ -67,7 +67,7 @@ void FindCheese(Maze * maze) {
     } else {
       // there is still direction you can try.
       path[last_index] += 1;
-      if((last_index > 1) // There is a cell before.
+      if((last_index >= 1) // There is a cell before.
           && (path[last_index] == oppositeDirection(path[last_index -1])) // this cell is not the opposite one
 
         ) {
@@ -77,10 +77,16 @@ void FindCheese(Maze * maze) {
       }
       if (maze->Move(path.back())) {
         // you move to a good direction.
+        cout << path.back() << endl;
         path.push_back(0);
 
         // Check if the cheese is in the cell you just explored.
         if (maze->Success()) {
+          // print path:
+          for(unsigned int i = 0; i < path.size(); ++i ) {
+            cout << path[i] << " ";
+          }
+          cout << endl;
           cout << "Success" << endl;
           return;
         }
