@@ -1,0 +1,119 @@
+// !$*UTF8*$!
+{
+	832890885F63E4B04BC9FA86 /* Mesh.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {710, 3094}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 690}";
+		};
+	};
+	91A72A36C79B4C5E0B354B0D /* raymini */ = {
+		activeExec = 0;
+		executables = (
+			CFA1FD721441E9D00038402D /* raymini */,
+		);
+	};
+	91B15E841AA80083484172DE /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = CFA1FD721441E9D00038402D /* raymini */;
+		activeTarget = 91A72A36C79B4C5E0B354B0D /* raymini */;
+		codeSenseManager = CFA1FD8C1441E9EF0038402D /* Code sense */;
+		executables = (
+			CFA1FD721441E9D00038402D /* raymini */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					532,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 348334561;
+			PBXWorkspaceStateSaveDate = 348334561;
+		};
+		perUserProjectItems = {
+			CF6E517C14C329E700DB021C /* PBXTextBookmark */ = CF6E517C14C329E700DB021C /* PBXTextBookmark */;
+			CFA1FD97144223B40038402D /* PBXTextBookmark */ = CFA1FD97144223B40038402D /* PBXTextBookmark */;
+		};
+		sourceControlManager = CFA1FD8B1441E9EF0038402D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	CF6E517C14C329E700DB021C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 832890885F63E4B04BC9FA86 /* Mesh.cpp */;
+		name = "Mesh.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 690;
+		vrLoc = 0;
+	};
+	CFA1FD721441E9D00038402D /* raymini */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = raymini;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	CFA1FD8B1441E9EF0038402D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	CFA1FD8C1441E9EF0038402D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	CFA1FD97144223B40038402D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 832890885F63E4B04BC9FA86 /* Mesh.cpp */;
+		name = "Mesh.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 690;
+		vrLoc = 0;
+	};
+}

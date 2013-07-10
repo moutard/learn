@@ -1,0 +1,3195 @@
+Traymini
+v7
+r0
+t339864025.380756
+cCheck dependencies
+cProcessInfoPlistFile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/Info.plist Info.plist
+cPhaseScriptExecution "Qt Qmake" /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-D7BA7D76DAB5DD13389D6332.sh
+cPhaseScriptExecution "Qt Preprocessors" /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-A0A52A2ADF7A1E2A99738674.sh
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Window.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/GLViewer.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/QTUtils.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Vertex.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Triangle.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Mesh.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/BoundingBox.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Material.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Object.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Light.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Scene.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/RayTracer.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Ray.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Main.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_Window.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_GLViewer.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_QTUtils.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+
+N/Library/Frameworks/QGLViewer.framework/Headers/camera.h
+c000000004E91D882000000000000622F
+t1318180994
+s25135
+i"manipulatedCameraFrame.h"
+i"keyFrameInterpolator.h"
+
+N/Library/Frameworks/QGLViewer.framework/Headers/config.h
+c000000004E91C53F0000000000000FD5
+t1318176063
+s4053
+i<qglobal.h>
+i<QGLWidget>
+i<qgl.h>
+i<GLUT/glut.h>
+i<glut.h>
+i<GL/glut.h>
+i<QList>
+i<QVector>
+i<qptrlist.h>
+i<qvaluevector.h>
+
+N/Library/Frameworks/QGLViewer.framework/Headers/constraint.h
+c000000004E91C53F0000000000003991
+t1318176063
+s14737
+i"vec.h"
+i"quaternion.h"
+
+N/Library/Frameworks/QGLViewer.framework/Headers/frame.h
+c000000004E91D8700000000000004BD5
+t1318180976
+s19413
+i<QObject>
+i<QString>
+i<qobject.h>
+i<qstring.h>
+i"constraint.h"
+
+N/Library/Frameworks/QGLViewer.framework/Headers/keyFrameInterpolator.h
+c000000004E91D87F0000000000003949
+t1318180991
+s14665
+i<QObject>
+i<QTimer>
+i<qobject.h>
+i<qtimer.h>
+i"quaternion.h"
+i"frame.h"
+
+N/Library/Frameworks/QGLViewer.framework/Headers/manipulatedCameraFrame.h
+c000000004E91D87B000000000000196F
+t1318180987
+s6511
+i"manipulatedFrame.h"
+
+N/Library/Frameworks/QGLViewer.framework/Headers/manipulatedFrame.h
+c000000004E91D877000000000000341B
+t1318180983
+s13339
+i"frame.h"
+i"mouseGrabber.h"
+i<QString>
+i<QTimer>
+i<QDateTime>
+i<qstring.h>
+i<qtimer.h>
+i<qdatetime.h>
+
+N/Library/Frameworks/QGLViewer.framework/Headers/mouseGrabber.h
+c000000004E91C53F0000000000002F7F
+t1318176063
+s12159
+i"config.h"
+i<QEvent>
+i<qevent.h>
+
+N/Library/Frameworks/QGLViewer.framework/Headers/qglviewer.h
+c000000004E91C53F000000000000CB96
+t1318176063
+s52118
+i"camera.h"
+i<QMap>
+i<QClipboard>
+i<qmap.h>
+i<qclipboard.h>
+
+N/Library/Frameworks/QGLViewer.framework/Headers/quaternion.h
+c000000004E91D8690000000000002ABA
+t1318180969
+s10938
+i"vec.h"
+i<math.h>
+i<iostream>
+
+N/Library/Frameworks/QGLViewer.framework/Headers/vec.h
+c000000004E91D85B0000000000002ADA
+t1318180955
+s10970
+i<math.h>
+i<iostream>
+i<QDomElement>
+i<qdom.h>
+i"config.h"
+
+N/Library/Frameworks/Qt3Support.framework/Headers/q3cstring.h
+c000000004C8A594A0000000000002795
+t1284135242
+s10133
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/Qt3Support.framework/Headers/q3valuelist.h
+c000000004C8A594B0000000000002081
+t1284135243
+s8321
+i<QtCore/qalgorithms.h>
+i<QtCore/qdatastream.h>
+i<QtCore/qlinkedlist.h>
+i<QtCore/qlist.h>
+i<iterator>
+i<list>
+
+N/Library/Frameworks/QtCore.framework/Headers/QPoint
+c000000004C8A59470000000000000014
+t1284135239
+s20
+i"qpoint.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/QPointF
+c000000004C8A59470000000000000014
+t1284135239
+s20
+i"qpoint.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/qabstractitemmodel.h
+c000000004C8A59470000000000004075
+t1284135239
+s16501
+i<QtCore/qvariant.h>
+i<QtCore/qobject.h>
+i<QtCore/qhash.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qalgorithms.h
+c000000004C8A59470000000000004026
+t1284135239
+s16422
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic.h
+c000000004C8A59470000000000001AB4
+t1284135239
+s6836
+i<QtCore/qglobal.h>
+i<QtCore/qbasicatomic.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_alpha.h
+c000000004C8A594700000000000065B1
+t1284135239
+s26033
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_arch.h
+c000000004C8A59470000000000000DC1
+t1284135239
+s3521
+i"QtCore/qglobal.h"
+i"QtCore/qatomic_vxworks.h"
+i"QtCore/qatomic_alpha.h"
+i"QtCore/qatomic_arm.h"
+i"QtCore/qatomic_armv6.h"
+i"QtCore/qatomic_avr32.h"
+i"QtCore/qatomic_bfin.h"
+i"QtCore/qatomic_generic.h"
+i"QtCore/qatomic_i386.h"
+i"QtCore/qatomic_ia64.h"
+i"QtCore/qatomic_macosx.h"
+i"QtCore/qatomic_mips.h"
+i"QtCore/qatomic_parisc.h"
+i"QtCore/qatomic_powerpc.h"
+i"QtCore/qatomic_s390.h"
+i"QtCore/qatomic_sparc.h"
+i"QtCore/qatomic_windows.h"
+i"QtCore/qatomic_windowsce.h"
+i"QtCore/qatomic_x86_64.h"
+i"QtCore/qatomic_symbian.h"
+i"QtCore/qatomic_sh.h"
+i"QtCore/qatomic_sh4a.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_arm.h
+c000000004C8A59470000000000002EFE
+t1284135239
+s12030
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_armv6.h
+c000000004C8A59470000000000003ABC
+t1284135239
+s15036
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_avr32.h
+c000000004C8A59470000000000001D39
+t1284135239
+s7481
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_bfin.h
+c000000004C8A59470000000000002747
+t1284135239
+s10055
+i<asm/fixed_code.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_bootstrap.h
+c000000004C8A59470000000000000C1D
+t1284135239
+s3101
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_generic.h
+c000000004C8A594700000000000021FC
+t1284135239
+s8700
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_i386.h
+c000000004C8A59470000000000002AC2
+t1284135239
+s10946
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_ia64.h
+c000000004C8A594700000000000064F4
+t1284135239
+s25844
+i<ia64intrin.h>
+i<ia64/sys/inline.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_macosx.h
+c000000004C8A594700000000000008E8
+t1284135239
+s2280
+i<QtCore/qatomic_x86_64.h>
+i<QtCore/qatomic_i386.h>
+i<QtCore/qatomic_powerpc.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_mips.h
+c000000004C8A59470000000000006E38
+t1284135239
+s28216
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_parisc.h
+c000000004C8A594700000000000020CD
+t1284135239
+s8397
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_powerpc.h
+c000000004C8A5947000000000000597D
+t1284135239
+s22909
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_s390.h
+c000000004C8A59470000000000003772
+t1284135239
+s14194
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_sh.h
+c000000004C8A59470000000000002406
+t1284135239
+s9222
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_sh4a.h
+c000000004C8A5947000000000000460D
+t1284135239
+s17933
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_sparc.h
+c000000004C8A5947000000000000424F
+t1284135239
+s16975
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_symbian.h
+c000000004C8A59470000000000002BE7
+t1284135239
+s11239
+i<QtCore/qglobal.h>
+i<e32std.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_vxworks.h
+c000000004C8A5947000000000000213A
+t1284135239
+s8506
+i<QtCore/qatomic_powerpc.h>
+i<vxWorksCommon.h>
+i<taskLib.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_windows.h
+c000000004C8A59470000000000003FA9
+t1284135239
+s16297
+i"QtCore/qatomic_i386.h"
+i"QtCore/qatomic_x86_64.h"
+i<winbase.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_windowsce.h
+c000000004C8A59470000000000000873
+t1284135239
+s2163
+i<QtCore/qglobal.h>
+i"QtCore/qatomic_windows.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_x86_64.h
+c000000004C8A59470000000000002AE7
+t1284135239
+s10983
+
+N/Library/Frameworks/QtCore.framework/Headers/qbasicatomic.h
+c000000004C8A59470000000000001922
+t1284135239
+s6434
+i<QtCore/qglobal.h>
+i<QtCore/qatomic_bootstrap.h>
+i<QtCore/qatomic_arch.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbasictimer.h
+c000000004C8A594700000000000009BC
+t1284135239
+s2492
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbitarray.h
+c000000004C8A59470000000000001857
+t1284135239
+s6231
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbuffer.h
+c000000004C8A59470000000000000D13
+t1284135239
+s3347
+i<QtCore/qiodevice.h>
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbytearray.h
+c000000004C8A59470000000000005C3C
+t1284135239
+s23612
+i<QtCore/qatomic.h>
+i<QtCore/qnamespace.h>
+i<string.h>
+i<stdarg.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qchar.h
+c000000004C8A59470000000000003308
+t1284135239
+s13064
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qconfig.h
+c000000004C8A594700000000000014A5
+t1284135239
+s5285
+
+N/Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
+c000000004C8A59470000000000002790
+t1284135239
+s10128
+i<QtCore/qobject.h>
+i<QtCore/qcoreevent.h>
+i<QtCore/qeventloop.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+c000000004C8A59470000000000003F82
+t1284135239
+s16258
+i<QtCore/qnamespace.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qobjectdefs.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qdatastream.h
+c000000004C8A59470000000000002CA9
+t1284135239
+s11433
+i<QtCore/qscopedpointer.h>
+i<QtCore/qiodevice.h>
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qdir.h
+c000000004C8A59470000000000002618
+t1284135239
+s9752
+i<QtCore/qstring.h>
+i<QtCore/qfileinfo.h>
+i<QtCore/qstringlist.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qeventloop.h
+c000000004C8A59470000000000000C6D
+t1284135239
+s3181
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfactoryinterface.h
+c000000004C8A5947000000000000094D
+t1284135239
+s2381
+i<QtCore/qobject.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfeatures.h
+c000000004C8A59470000000000005467
+t1284135239
+s21607
+
+N/Library/Frameworks/QtCore.framework/Headers/qfile.h
+c000000004C8A594700000000000018D4
+t1284135239
+s6356
+i<QtCore/qiodevice.h>
+i<QtCore/qstring.h>
+i<stdio.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfileinfo.h
+c000000004C8A594700000000000017AF
+t1284135239
+s6063
+i<QtCore/qfile.h>
+i<QtCore/qlist.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qglobal.h
+c000000004C8A59470000000000014F7B
+t1284135239
+s85883
+i<stddef.h>
+i<QtCore/qconfig.h>
+i<AvailabilityMacros.h>
+i<e32def.h>
+i<QtCore/qfeatures.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qhash.h
+c000000004C8A5947000000000000784A
+t1284135239
+s30794
+i<QtCore/qatomic.h>
+i<QtCore/qchar.h>
+i<QtCore/qiterator.h>
+i<QtCore/qlist.h>
+i<QtCore/qpair.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qiodevice.h
+c000000004C8A594700000000000020AE
+t1284135239
+s8366
+i<QtCore/qobject.h>
+i<QtCore/qobjectdefs.h>
+i<QtCore/qscopedpointer.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qiterator.h
+c000000004C8A594700000000000022FA
+t1284135239
+s8954
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qline.h
+c000000004C8A594700000000000026B4
+t1284135239
+s9908
+i<QtCore/qpoint.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlinkedlist.h
+c000000004C8A59470000000000003C92
+t1284135239
+s15506
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<iterator>
+i<list>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlist.h
+c000000004C8A594700000000000072A5
+t1284135239
+s29349
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<QtCore/qalgorithms.h>
+i<iterator>
+i<list>
+i<new>
+i<limits.h>
+i<string.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlocale.h
+c000000004C8A594700000000000050D3
+t1284135239
+s20691
+i<QtCore/qstring.h>
+i<QtCore/qobjectdefs.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmap.h
+c000000004C8A5947000000000000833D
+t1284135239
+s33597
+i<QtCore/qatomic.h>
+i<QtCore/qiterator.h>
+i<QtCore/qlist.h>
+i<map>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmargins.h
+c000000004C8A594700000000000010AD
+t1284135239
+s4269
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmetatype.h
+c000000004C8A594700000000000034DB
+t1284135239
+s13531
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmimedata.h
+c000000004C8A59470000000000000CE3
+t1284135239
+s3299
+i<QtCore/qvariant.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qnamespace.h
+c000000004C8A5947000000000000D79F
+t1284135239
+s55199
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qobject.h
+c000000004C8A59470000000000003FC3
+t1284135239
+s16323
+i<QtCore/qobjectdefs.h>
+i<QtCore/qstring.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qlist.h>
+i<QtCore/qcoreevent.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qobjectdefs.h
+c000000004C8A59470000000000004478
+t1284135239
+s17528
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpair.h
+c000000004C8A59470000000000000F2C
+t1284135239
+s3884
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qplugin.h
+c000000004C8A59470000000000001308
+t1284135239
+s4872
+i<QtCore/qobject.h>
+i<QtCore/qpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpoint.h
+c000000004C8A594700000000000024BF
+t1284135239
+s9407
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpointer.h
+c000000004C8A59470000000000001475
+t1284135239
+s5237
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qrect.h
+c000000004C8A594700000000000056D2
+t1284135239
+s22226
+i<QtCore/qsize.h>
+i<QtCore/qpoint.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qregexp.h
+c000000004C8A59470000000000001589
+t1284135239
+s5513
+i<QtCore/qstring.h>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Headers/qscopedpointer.h
+c000000004C8A5947000000000000155A
+t1284135239
+s5466
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qset.h
+c000000004C8A594700000000000035BF
+t1284135239
+s13759
+i<QtCore/qhash.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qshareddata.h
+c000000004C8A59470000000000001DCB
+t1284135239
+s7627
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsharedpointer.h
+c000000004C8A5947000000000000170F
+t1284135239
+s5903
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+i<QtCore/qshareddata.h>
+i<QtCore/qsharedpointer_impl.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsharedpointer_impl.h
+c000000004C8A594700000000000068FD
+t1284135239
+s26877
+i<new>
+i<QtCore/qatomic.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsize.h
+c000000004C8A5947000000000000286F
+t1284135239
+s10351
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstring.h
+c000000004C8A5947000000000000E808
+t1284135239
+s59400
+i<QtCore/qchar.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qatomic.h>
+i<QtCore/qnamespace.h>
+i<Qt3Support/q3cstring.h>
+i<string>
+i<string>
+i<stdarg.h>
+i<QtCore/qstringbuilder.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstringbuilder.h
+c000000004C8A5947000000000000243D
+t1284135239
+s9277
+i<QtCore/qstring.h>
+i<QtCore/qmap.h>
+i<string.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+c000000004C8A5947000000000000263B
+t1284135239
+s9787
+i<QtCore/qalgorithms.h>
+i<QtCore/qdatastream.h>
+i<QtCore/qlist.h>
+i<QtCore/qregexp.h>
+i<QtCore/qstring.h>
+i<QtCore/qstringmatcher.h>
+i<Qt3Support/q3valuelist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstringmatcher.h
+c000000004C8A59470000000000000D10
+t1284135239
+s3344
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qt_windows.h
+c000000004C8A594700000000000010C5
+t1284135239
+s4293
+i<windows.h>
+i<ceconfig.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qvariant.h
+c000000004C8A594700000000000048A0
+t1284135239
+s18592
+i<QtCore/qatomic.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qlist.h>
+i<QtCore/qmetatype.h>
+i<QtCore/qmap.h>
+i<QtCore/qhash.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qvector.h
+c000000004C8A5947000000000000664A
+t1284135239
+s26186
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<QtCore/qalgorithms.h>
+i<QtCore/qlist.h>
+i<iterator>
+i<vector>
+i<stdlib.h>
+i<string.h>
+i<QtCore/QPointF>
+i<QtCore/QPoint>
+
+N/Library/Frameworks/QtCore.framework/QtCore
+c000000004C8A5A7D00000000005EEB20
+t1284135549
+s6220576
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QCoreApplication
+c000000004C8A5947000000000000001E
+t1284135239
+s30
+i"qcoreapplication.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QDateTime
+c000000004C8A59470000000000000017
+t1284135239
+s23
+i"qdatetime.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QDir
+c000000004C8A59470000000000000012
+t1284135239
+s18
+i"qdir.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QEvent
+c000000004C8A59470000000000000018
+t1284135239
+s24
+i"qcoreevent.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QList
+c000000004C8A59470000000000000013
+t1284135239
+s19
+i"qlist.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QMap
+c000000004C8A59470000000000000012
+t1284135239
+s18
+i"qmap.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QObject
+c000000004C8A59470000000000000015
+t1284135239
+s21
+i"qobject.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QString
+c000000004C8A59470000000000000015
+t1284135239
+s21
+i"qstring.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QTimer
+c000000004C8A59470000000000000014
+t1284135239
+s20
+i"qtimer.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/QVector
+c000000004C8A59470000000000000015
+t1284135239
+s21
+i"qvector.h"
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qcoreapplication.h
+c000000004C8A59470000000000002790
+t1284135239
+s10128
+i<QtCore/qobject.h>
+i<QtCore/qcoreevent.h>
+i<QtCore/qeventloop.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qcoreevent.h
+c000000004C8A59470000000000003F82
+t1284135239
+s16258
+i<QtCore/qnamespace.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qobjectdefs.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qdatetime.h
+c000000004C8A59470000000000002D6F
+t1284135239
+s11631
+i<QtCore/qstring.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qsharedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qdir.h
+c000000004C8A59470000000000002618
+t1284135239
+s9752
+i<QtCore/qstring.h>
+i<QtCore/qfileinfo.h>
+i<QtCore/qstringlist.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qglobal.h
+c000000004C8A59470000000000014F7B
+t1284135239
+s85883
+i<stddef.h>
+i<QtCore/qconfig.h>
+i<AvailabilityMacros.h>
+i<e32def.h>
+i<QtCore/qfeatures.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qlist.h
+c000000004C8A594700000000000072A5
+t1284135239
+s29349
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<QtCore/qalgorithms.h>
+i<iterator>
+i<list>
+i<new>
+i<limits.h>
+i<string.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qmap.h
+c000000004C8A5947000000000000833D
+t1284135239
+s33597
+i<QtCore/qatomic.h>
+i<QtCore/qiterator.h>
+i<QtCore/qlist.h>
+i<map>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qobject.h
+c000000004C8A59470000000000003FC3
+t1284135239
+s16323
+i<QtCore/qobjectdefs.h>
+i<QtCore/qstring.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qlist.h>
+i<QtCore/qcoreevent.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qstring.h
+c000000004C8A5947000000000000E808
+t1284135239
+s59400
+i<QtCore/qchar.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qatomic.h>
+i<QtCore/qnamespace.h>
+i<Qt3Support/q3cstring.h>
+i<string>
+i<string>
+i<stdarg.h>
+i<QtCore/qstringbuilder.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qtimer.h
+c000000004C8A59470000000000000DD7
+t1284135239
+s3543
+i<QtCore/qbasictimer.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Versions/4/Headers/qvector.h
+c000000004C8A5947000000000000664A
+t1284135239
+s26186
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<QtCore/qalgorithms.h>
+i<QtCore/qlist.h>
+i<iterator>
+i<vector>
+i<stdlib.h>
+i<string.h>
+i<QtCore/QPointF>
+i<QtCore/QPoint>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractbutton.h
+c000000004C8A59470000000000001736
+t1284135239
+s5942
+i<QtGui/qicon.h>
+i<QtGui/qkeysequence.h>
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractitemdelegate.h
+c000000004C8A594700000000000011C9
+t1284135239
+s4553
+i<QtCore/qobject.h>
+i<QtGui/qstyleoption.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractscrollarea.h
+c000000004C8A594700000000000012F9
+t1284135239
+s4857
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractslider.h
+c000000004C8A59470000000000001758
+t1284135239
+s5976
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractspinbox.h
+c000000004C8A594700000000000017D0
+t1284135239
+s6096
+i<QtGui/qwidget.h>
+i<QtGui/qvalidator.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaction.h
+c000000004C8A5947000000000000235D
+t1284135239
+s9053
+i<QtGui/qkeysequence.h>
+i<QtCore/qstring.h>
+i<QtGui/qwidget.h>
+i<QtCore/qvariant.h>
+i<QtGui/qicon.h>
+i<QtGui/qactiongroup.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qactiongroup.h
+c000000004C8A59470000000000000E6F
+t1284135239
+s3695
+i<QtGui/qaction.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qboxlayout.h
+c000000004C8A594700000000000015ED
+t1284135239
+s5613
+i<QtGui/qlayout.h>
+i<QtGui/qwidget.h>
+i<limits.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qbrush.h
+c000000004C8A59470000000000002513
+t1284135239
+s9491
+i<QtCore/qpair.h>
+i<QtCore/qpoint.h>
+i<QtCore/qvector.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qcolor.h>
+i<QtGui/qmatrix.h>
+i<QtGui/qtransform.h>
+i<QtGui/qimage.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcolor.h
+c000000004C8A594700000000000022B2
+t1284135239
+s8882
+i<QtGui/qrgb.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcommonstyle.h
+c000000004C8A594700000000000010BA
+t1284135239
+s4282
+i<QtGui/qstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcursor.h
+c000000004C8A5947000000000000142A
+t1284135239
+s5162
+i<QtCore/qpoint.h>
+i<QtGui/qwindowdefs.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdesktopwidget.h
+c000000004C8A59470000000000000E11
+t1284135239
+s3601
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdialog.h
+c000000004C8A59470000000000000FE3
+t1284135239
+s4067
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdrag.h
+c000000004C8A59480000000000000C9E
+t1284135240
+s3230
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdrawutil.h
+c000000004C8A59480000000000001E53
+t1284135240
+s7763
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtCore/qmargins.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qevent.h
+c000000004C8A59480000000000006C65
+t1284135240
+s27749
+i<QtGui/qwindowdefs.h>
+i<QtCore/qobject.h>
+i<QtGui/qregion.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtGui/qkeysequence.h>
+i<QtCore/qcoreevent.h>
+i<QtGui/qmime.h>
+i<QtGui/qdrag.h>
+i<QtCore/qvariant.h>
+i<QtCore/qmap.h>
+i<QtCore/qset.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfont.h
+c000000004C8A59480000000000002781
+t1284135240
+s10113
+i<QtGui/qwindowdefs.h>
+i<QtCore/qstring.h>
+i<QtCore/qsharedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfontinfo.h
+c000000004C8A59480000000000000B24
+t1284135240
+s2852
+i<QtGui/qfont.h>
+i<QtCore/qsharedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfontmetrics.h
+c000000004C8A59480000000000001A84
+t1284135240
+s6788
+i<QtGui/qfont.h>
+i<QtCore/qsharedpointer.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qframe.h
+c000000004C8A59480000000000001221
+t1284135240
+s4641
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgridlayout.h
+c000000004C8A59480000000000001C8B
+t1284135240
+s7307
+i<QtGui/qlayout.h>
+i<QtGui/qwidget.h>
+i<limits.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qicon.h
+c000000004C8A5948000000000000166B
+t1284135240
+s5739
+i<QtCore/qglobal.h>
+i<QtCore/qsize.h>
+i<QtCore/qlist.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qimage.h
+c000000004C8A5948000000000000373E
+t1284135240
+s14142
+i<QtGui/qtransform.h>
+i<QtGui/qpaintdevice.h>
+i<QtGui/qrgb.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qrect.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qimageiohandler.h
+c000000004C8A5948000000000000131D
+t1284135240
+s4893
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qkeysequence.h
+c000000004C8A59480000000000001A82
+t1284135240
+s6786
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlayout.h
+c000000004C8A59480000000000001E5B
+t1284135240
+s7771
+i<QtCore/qobject.h>
+i<QtGui/qlayoutitem.h>
+i<QtGui/qsizepolicy.h>
+i<QtCore/qrect.h>
+i<QtCore/qmargins.h>
+i<limits.h>
+i<QtGui/qboxlayout.h>
+i<QtGui/qgridlayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlayoutitem.h
+c000000004C8A59480000000000001550
+t1284135240
+s5456
+i<QtGui/qsizepolicy.h>
+i<QtCore/qrect.h>
+i<limits.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmacdefines_mac.h
+c000000004C8A594800000000000019C8
+t1284135240
+s6600
+i<QtCore/qglobal.h>
+i<Cocoa/Cocoa.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmatrix.h
+c000000004C8A59480000000000001AF0
+t1284135240
+s6896
+i<QtGui/qpolygon.h>
+i<QtGui/qregion.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qline.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+i<QtGui/qwmatrix.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmenu.h
+c000000004C8A59480000000000003C6A
+t1284135240
+s15466
+i<QtGui/qwidget.h>
+i<QtCore/qstring.h>
+i<QtGui/qicon.h>
+i<QtGui/qaction.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmime.h
+c000000004C8A594800000000000018D9
+t1284135240
+s6361
+i<QtCore/qmimedata.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpaintdevice.h
+c000000004C8A5948000000000000178A
+t1284135240
+s6026
+i<QtGui/qwindowdefs.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpaintengine.h
+c000000004C8A59480000000000002D63
+t1284135240
+s11619
+i<QtCore/qnamespace.h>
+i<QtCore/qobjectdefs.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qpainter.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpainter.h
+c000000004C8A59480000000000008521
+t1284135240
+s34081
+i<QtCore/qnamespace.h>
+i<QtCore/qrect.h>
+i<QtCore/qpoint.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qpixmap.h>
+i<QtGui/qimage.h>
+i<QtGui/qtextoption.h>
+i<QtGui/qdrawutil.h>
+i<QtGui/qpolygon.h>
+i<QtGui/qpen.h>
+i<QtGui/qbrush.h>
+i<QtGui/qmatrix.h>
+i<QtGui/qtransform.h>
+i<QtGui/qfontinfo.h>
+i<QtGui/qfontmetrics.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpainterpath.h
+c000000004C8A5948000000000000373E
+t1284135240
+s14142
+i<QtGui/qmatrix.h>
+i<QtCore/qglobal.h>
+i<QtCore/qrect.h>
+i<QtCore/qline.h>
+i<QtCore/qvector.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpalette.h
+c000000004C8A5948000000000000328F
+t1284135240
+s12943
+i<QtGui/qwindowdefs.h>
+i<QtGui/qcolor.h>
+i<QtGui/qbrush.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpen.h
+c000000004C8A59480000000000001020
+t1284135240
+s4128
+i<QtGui/qcolor.h>
+i<QtGui/qbrush.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpixmap.h
+c000000004C8A59480000000000002F8C
+t1284135240
+s12172
+i<QtGui/qpaintdevice.h>
+i<QtGui/qcolor.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtCore/qsharedpointer.h>
+i<QtGui/qimage.h>
+i<QtGui/qtransform.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpolygon.h
+c000000004C8A59480000000000001930
+t1284135240
+s6448
+i<QtCore/qvector.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qregion.h
+c000000004C8A5949000000000000207F
+t1284135241
+s8319
+i<QtCore/qatomic.h>
+i<QtCore/qrect.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qrgb.h
+c000000004C8A59490000000000000D24
+t1284135241
+s3364
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qrubberband.h
+c000000004C8A59490000000000000D09
+t1284135241
+s3337
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsizepolicy.h
+c000000004C8A59490000000000002168
+t1284135241
+s8552
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qslider.h
+c000000004C8A59490000000000001166
+t1284135241
+s4454
+i<QtGui/qabstractslider.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstyle.h
+c000000004C8A59490000000000006CF2
+t1284135241
+s27890
+i<QtCore/qobject.h>
+i<QtCore/qrect.h>
+i<QtCore/qsize.h>
+i<QtGui/qicon.h>
+i<QtGui/qpixmap.h>
+i<QtGui/qpalette.h>
+i<QtGui/qsizepolicy.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstyleoption.h
+c000000004C8A5949000000000000703B
+t1284135241
+s28731
+i<QtCore/qvariant.h>
+i<QtGui/qabstractspinbox.h>
+i<QtGui/qicon.h>
+i<QtGui/qmatrix.h>
+i<QtGui/qslider.h>
+i<QtGui/qstyle.h>
+i<QtGui/qtabbar.h>
+i<QtGui/qtabwidget.h>
+i<QtGui/qrubberband.h>
+i<QtGui/qframe.h>
+i<QtCore/qabstractitemmodel.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtabbar.h
+c000000004C8A59490000000000001BE1
+t1284135241
+s7137
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtabwidget.h
+c000000004C8A59490000000000002254
+t1284135241
+s8788
+i<QtGui/qwidget.h>
+i<QtGui/qicon.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextoption.h
+c000000004C8A59490000000000001398
+t1284135241
+s5016
+i<QtCore/qnamespace.h>
+i<QtCore/qchar.h>
+i<QtCore/qmetatype.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtransform.h
+c000000004C8A59490000000000002CA9
+t1284135241
+s11433
+i<QtGui/qmatrix.h>
+i<QtGui/qpainterpath.h>
+i<QtGui/qpolygon.h>
+i<QtGui/qregion.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qline.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtransportauth_qws.h
+c000000004C8A59490000000000001DF8
+t1284135241
+s7672
+i<QtCore/qglobal.h>
+i<QtCore/qobject.h>
+i<QtCore/qhash.h>
+i<QtCore/qstring.h>
+i<QtCore/qbuffer.h>
+i<QtCore/qpointer.h>
+i<sys/types.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qvalidator.h
+c000000004C8A594900000000000017F5
+t1284135241
+s6133
+i<QtCore/qobject.h>
+i<QtCore/qstring.h>
+i<QtCore/qregexp.h>
+i<QtCore/qlocale.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwidget.h
+c000000004C8A594900000000000095E9
+t1284135241
+s38377
+i<QtGui/qwindowdefs.h>
+i<QtCore/qobject.h>
+i<QtCore/qmargins.h>
+i<QtGui/qpaintdevice.h>
+i<QtGui/qpalette.h>
+i<QtGui/qfont.h>
+i<QtGui/qfontmetrics.h>
+i<QtGui/qfontinfo.h>
+i<QtGui/qsizepolicy.h>
+i<QtGui/qregion.h>
+i<QtGui/qbrush.h>
+i<QtGui/qcursor.h>
+i<QtGui/qkeysequence.h>
+i<QtGui/qevent.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowdefs.h
+c000000004C8A59490000000000000EF5
+t1284135241
+s3829
+i<QtCore/qobjectdefs.h>
+i<QtCore/qnamespace.h>
+i<QtGui/qmacdefines_mac.h>
+i<QtGui/qwindowdefs_win.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowdefs_win.h
+c000000004C8A59490000000000000D23
+t1284135241
+s3363
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowsstyle.h
+c000000004C8A59490000000000000FAA
+t1284135241
+s4010
+i<QtGui/qcommonstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwmatrix.h
+c000000004C8A59490000000000000880
+t1284135241
+s2176
+i<QtGui/qmatrix.h>
+
+N/Library/Frameworks/QtGui.framework/QtGui
+c000000004C8A5A8000000000017EEDB0
+t1284135552
+s25095600
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QAction
+c000000004C8A59470000000000000015
+t1284135239
+s21
+i"qaction.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QApplication
+c000000004C8A5947000000000000001A
+t1284135239
+s26
+i"qapplication.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QButtonGroup
+c000000004C8A5947000000000000001A
+t1284135239
+s26
+i"qbuttongroup.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QCheckBox
+c000000004C8A59470000000000000017
+t1284135239
+s23
+i"qcheckbox.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QCleanlooksStyle
+c000000004C8A5947000000000000001E
+t1284135239
+s30
+i"qcleanlooksstyle.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QClipboard
+c000000004C8A59470000000000000018
+t1284135239
+s24
+i"qclipboard.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QColorDialog
+c000000004C8A5947000000000000001A
+t1284135239
+s26
+i"qcolordialog.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QComboBox
+c000000004C8A59470000000000000017
+t1284135239
+s23
+i"qcombobox.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QDockWidget
+c000000004C8A59480000000000000019
+t1284135240
+s25
+i"qdockwidget.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QFileDialog
+c000000004C8A59480000000000000019
+t1284135240
+s25
+i"qfiledialog.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QFont
+c000000004C8A59480000000000000013
+t1284135240
+s19
+i"qfont.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QFrame
+c000000004C8A59480000000000000014
+t1284135240
+s20
+i"qframe.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QGroupBox
+c000000004C8A59480000000000000017
+t1284135240
+s23
+i"qgroupbox.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QHBoxLayout
+c000000004C8A59480000000000000018
+t1284135240
+s24
+i"qboxlayout.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QImage
+c000000004C8A59480000000000000014
+t1284135240
+s20
+i"qimage.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QImageReader
+c000000004C8A5948000000000000001A
+t1284135240
+s26
+i"qimagereader.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QLCDNumber
+c000000004C8A59480000000000000018
+t1284135240
+s24
+i"qlcdnumber.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QLabel
+c000000004C8A59480000000000000014
+t1284135240
+s20
+i"qlabel.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QLayout
+c000000004C8A59480000000000000015
+t1284135240
+s21
+i"qlayout.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QMainWindow
+c000000004C8A59480000000000000019
+t1284135240
+s25
+i"qmainwindow.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QMenu
+c000000004C8A59480000000000000013
+t1284135240
+s19
+i"qmenu.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QMenuBar
+c000000004C8A59480000000000000016
+t1284135240
+s22
+i"qmenubar.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QMessageBox
+c000000004C8A59480000000000000019
+t1284135240
+s25
+i"qmessagebox.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QPixmap
+c000000004C8A59480000000000000015
+t1284135240
+s21
+i"qpixmap.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QPlastiqueStyle
+c000000004C8A5948000000000000001D
+t1284135240
+s29
+i"qplastiquestyle.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QProgressBar
+c000000004C8A5948000000000000001A
+t1284135240
+s26
+i"qprogressbar.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QPushButton
+c000000004C8A59480000000000000019
+t1284135240
+s25
+i"qpushbutton.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QRadioButton
+c000000004C8A5948000000000000001A
+t1284135240
+s26
+i"qradiobutton.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QScrollArea
+c000000004C8A59490000000000000019
+t1284135241
+s25
+i"qscrollarea.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QSizePolicy
+c000000004C8A59490000000000000019
+t1284135241
+s25
+i"qsizepolicy.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QSlider
+c000000004C8A59490000000000000015
+t1284135241
+s21
+i"qslider.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QSpinBox
+c000000004C8A59490000000000000016
+t1284135241
+s22
+i"qspinbox.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QSplashScreen
+c000000004C8A5949000000000000001B
+t1284135241
+s27
+i"qsplashscreen.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QSplitter
+c000000004C8A59490000000000000017
+t1284135241
+s23
+i"qsplitter.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QStatusBar
+c000000004C8A59490000000000000018
+t1284135241
+s24
+i"qstatusbar.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/QToolBar
+c000000004C8A59490000000000000016
+t1284135241
+s22
+i"qtoolbar.h"
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qaction.h
+c000000004C8A5947000000000000235D
+t1284135239
+s9053
+i<QtGui/qkeysequence.h>
+i<QtCore/qstring.h>
+i<QtGui/qwidget.h>
+i<QtCore/qvariant.h>
+i<QtGui/qicon.h>
+i<QtGui/qactiongroup.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qapplication.h
+c000000004C8A59470000000000003984
+t1284135239
+s14724
+i<QtCore/qcoreapplication.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qpoint.h>
+i<QtCore/qsize.h>
+i<QtGui/qcursor.h>
+i<QtGui/qdesktopwidget.h>
+i<QtGui/qwidget.h>
+i<QtGui/qpalette.h>
+i<QtGui/qrgb.h>
+i<QtGui/qtransportauth_qws.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qboxlayout.h
+c000000004C8A594700000000000015ED
+t1284135239
+s5613
+i<QtGui/qlayout.h>
+i<QtGui/qwidget.h>
+i<limits.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qbuttongroup.h
+c000000004C8A59470000000000000DBD
+t1284135239
+s3517
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qcheckbox.h
+c000000004C8A59470000000000000E7B
+t1284135239
+s3707
+i<QtGui/qabstractbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qcleanlooksstyle.h
+c000000004C8A59470000000000001352
+t1284135239
+s4946
+i<QtGui/qwindowsstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qclipboard.h
+c000000004C8A59470000000000000F7F
+t1284135239
+s3967
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qcolordialog.h
+c000000004C8A594700000000000013CB
+t1284135239
+s5067
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qcombobox.h
+c000000004C8A594700000000000032A7
+t1284135239
+s12967
+i<QtGui/qwidget.h>
+i<QtGui/qabstractitemdelegate.h>
+i<QtCore/qabstractitemmodel.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qdockwidget.h
+c000000004C8A59480000000000001398
+t1284135240
+s5016
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qevent.h
+c000000004C8A59480000000000006C65
+t1284135240
+s27749
+i<QtGui/qwindowdefs.h>
+i<QtCore/qobject.h>
+i<QtGui/qregion.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtGui/qkeysequence.h>
+i<QtCore/qcoreevent.h>
+i<QtGui/qmime.h>
+i<QtGui/qdrag.h>
+i<QtCore/qvariant.h>
+i<QtCore/qmap.h>
+i<QtCore/qset.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qfiledialog.h
+c000000004C8A5948000000000000368B
+t1284135240
+s13963
+i<QtCore/qdir.h>
+i<QtCore/qstring.h>
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qfont.h
+c000000004C8A59480000000000002781
+t1284135240
+s10113
+i<QtGui/qwindowdefs.h>
+i<QtCore/qstring.h>
+i<QtCore/qsharedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qframe.h
+c000000004C8A59480000000000001221
+t1284135240
+s4641
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qgroupbox.h
+c000000004C8A59480000000000000FC2
+t1284135240
+s4034
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qimage.h
+c000000004C8A5948000000000000373E
+t1284135240
+s14142
+i<QtGui/qtransform.h>
+i<QtGui/qpaintdevice.h>
+i<QtGui/qrgb.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qrect.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qimagereader.h
+c000000004C8A59480000000000001118
+t1284135240
+s4376
+i<QtCore/qbytearray.h>
+i<QtGui/qimage.h>
+i<QtGui/qimageiohandler.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qlabel.h
+c000000004C8A594800000000000017D0
+t1284135240
+s6096
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qlayout.h
+c000000004C8A59480000000000001E5B
+t1284135240
+s7771
+i<QtCore/qobject.h>
+i<QtGui/qlayoutitem.h>
+i<QtGui/qsizepolicy.h>
+i<QtCore/qrect.h>
+i<QtCore/qmargins.h>
+i<limits.h>
+i<QtGui/qboxlayout.h>
+i<QtGui/qgridlayout.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qlcdnumber.h
+c000000004C8A594800000000000011C3
+t1284135240
+s4547
+i<QtGui/qframe.h>
+i<QtCore/qbitarray.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qmainwindow.h
+c000000004C8A59480000000000001C5A
+t1284135240
+s7258
+i<QtGui/qwidget.h>
+i<QtGui/qtabwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qmenu.h
+c000000004C8A59480000000000003C6A
+t1284135240
+s15466
+i<QtGui/qwidget.h>
+i<QtCore/qstring.h>
+i<QtGui/qicon.h>
+i<QtGui/qaction.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qmenubar.h
+c000000004C8A594800000000000036CB
+t1284135240
+s14027
+i<QtGui/qmenu.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qmessagebox.h
+c000000004C8A594800000000000039C4
+t1284135240
+s14788
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qpixmap.h
+c000000004C8A59480000000000002F8C
+t1284135240
+s12172
+i<QtGui/qpaintdevice.h>
+i<QtGui/qcolor.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtCore/qsharedpointer.h>
+i<QtGui/qimage.h>
+i<QtGui/qtransform.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qplastiquestyle.h
+c000000004C8A594800000000000012BA
+t1284135240
+s4794
+i<QtGui/qwindowsstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qprogressbar.h
+c000000004C8A59480000000000001199
+t1284135240
+s4505
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qpushbutton.h
+c000000004C8A59480000000000001065
+t1284135240
+s4197
+i<QtGui/qabstractbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qradiobutton.h
+c000000004C8A59480000000000000B6C
+t1284135240
+s2924
+i<QtGui/qabstractbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qscrollarea.h
+c000000004C8A59490000000000000CF0
+t1284135241
+s3312
+i<QtGui/qabstractscrollarea.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qsizepolicy.h
+c000000004C8A59490000000000002168
+t1284135241
+s8552
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qslider.h
+c000000004C8A59490000000000001166
+t1284135241
+s4454
+i<QtGui/qabstractslider.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qspinbox.h
+c000000004C8A594900000000000016E6
+t1284135241
+s5862
+i<QtGui/qabstractspinbox.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qsplashscreen.h
+c000000004C8A59490000000000000D1B
+t1284135241
+s3355
+i<QtGui/qpixmap.h>
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qsplitter.h
+c000000004C8A5949000000000000178C
+t1284135241
+s6028
+i<QtGui/qframe.h>
+i<QtGui/qsizepolicy.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qstatusbar.h
+c000000004C8A59490000000000000ECC
+t1284135241
+s3788
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Versions/4/Headers/qtoolbar.h
+c000000004C8A59490000000000001954
+t1284135241
+s6484
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtOpenGL.framework/Headers/qglcolormap.h
+c000000004C8A594A0000000000000CDA
+t1284135242
+s3290
+i<QtGui/qcolor.h>
+i<QtCore/qvector.h>
+
+N/Library/Frameworks/QtOpenGL.framework/QtOpenGL
+c000000004C8A5A8100000000001F8190
+t1284135553
+s2064784
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/QGLWidget
+c000000004C8A594A0000000000000011
+t1284135242
+s17
+i"qgl.h"
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/qgl.h
+c000000004C8A594A000000000000512C
+t1284135242
+s20780
+i<QtGui/qwidget.h>
+i<QtGui/qpaintengine.h>
+i<QtOpenGL/qglcolormap.h>
+i<QtCore/qmap.h>
+i<QtCore/qscopedpointer.h>
+i<QtCore/qt_windows.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GLES/gl.h>
+i<GLES2/gl2.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Library/Frameworks/QtXml.framework/QtXml
+c000000004C8A5A8100000000000C42AC
+t1284135553
+s803500
+
+N/Library/Frameworks/QtXml.framework/Versions/4/Headers/QDomElement
+c000000004C8A594A0000000000000012
+t1284135242
+s18
+i"qdom.h"
+
+N/Library/Frameworks/QtXml.framework/Versions/4/Headers/qdom.h
+c000000004C8A594A0000000000005544
+t1284135242
+s21828
+i<QtCore/qstring.h>
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004D81D7CE0000000000043820
+t1300355022
+s276512
+
+N/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/GLUT.framework/Headers/glut.h
+c000000004C23CCCC000000000000578C
+t1277414604
+s22412
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004BD2501F0000000000025B59
+t1272074271
+s154457
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004BD2501F0000000000003F84
+t1272074271
+s16260
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004DEEB8140000000000043360
+t1307490324
+s275296
+
+N/Users/raphael/Desktop/infsi350_Projet-2010/raymini/raymini.app
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/BoundingBox.o
+t1318171223
+s44208
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/GLViewer.o
+t1318171224
+s653776
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Light.o
+t1318171223
+s44084
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Main.o
+t1318171225
+s730900
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Material.o
+t1318171223
+s44108
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Mesh.o
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Object.o
+t1318171223
+s77944
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/QTUtils.o
+t1318171224
+s378152
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Ray.o
+t1318171224
+s59212
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/RayTracer.o
+t1318171224
+s263152
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Scene.o
+t1318171224
+s223488
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Triangle.o
+t1318171223
+s69804
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Vertex.o
+t1318171223
+s89192
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Window.o
+t1318171225
+s853776
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_GLViewer.o
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_QTUtils.o
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_Window.o
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/raymini.LinkFileList
+c000000004E91B2560000000000000884
+t1318171222
+s2180
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-A0A52A2ADF7A1E2A99738674.sh
+c000000004E91B256000000000000006F
+t1318171222
+s111
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-D7BA7D76DAB5DD13389D6332.sh
+c000000004E91B256000000000000006E
+t1318171222
+s110
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.cpp
+c000000004BBE31C600000000000005F8
+t1270755782
+s1528
+i"BoundingBox.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.h
+c000000004BBE31C600000000000017A2
+t1270755782
+s6050
+i<vector>
+i<algorithm>
+i"Vec3D.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Edge.h
+c000000004BBE31C600000000000005FD
+t1270755782
+s1533
+i<map>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.cpp
+c000000004BBF022200000000000013C3
+t1270809122
+s5059
+i"GLViewer.h"
+i<iostream>
+i<cstdlib>
+i<cstdio>
+i<cassert>
+i<string>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.h
+c000000004BBE31C600000000000005D6
+t1270755782
+s1494
+i<QGLViewer/qglviewer.h>
+i<vector>
+i<string>
+i"Scene.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.cpp
+c000000004BBE31C6000000000000010A
+t1270755782
+s266
+i"Light.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.h
+c000000004BBE31C60000000000000484
+t1270755782
+s1156
+i<iostream>
+i<vector>
+i"Vec3D.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Main.cpp
+c000000004BBF023200000000000002A5
+t1270809138
+s677
+i<QApplication>
+i<Window.h>
+i<QDir>
+i<QPixmap>
+i<QSplashScreen>
+i<QPlastiqueStyle>
+i<QCleanlooksStyle>
+i<string>
+i<iostream>
+i"QTUtils.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.cpp
+c000000004BBE31C60000000000000110
+t1270755782
+s272
+i"Material.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.h
+c000000004BBE31C600000000000004DD
+t1270755782
+s1245
+i<iostream>
+i<vector>
+i"Vec3D.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp
+c000000004BBE31C60000000000001D33
+t1270755782
+s7475
+i"Mesh.h"
+i<algorithm>
+i<iostream>
+i<fstream>
+i<sstream>
+i<GL/glut.h>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.h
+c000000004BBE31C6000000000000088C
+t1270755782
+s2188
+i<vector>
+i<string>
+i"Vertex.h"
+i"Triangle.h"
+i"Edge.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.cpp
+c000000004BBE31C6000000000000024F
+t1270755782
+s591
+i"Object.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.h
+c000000004BBE31C6000000000000045A
+t1270755782
+s1114
+i<iostream>
+i<vector>
+i"Mesh.h"
+i"Material.h"
+i"BoundingBox.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.cpp
+c000000004BBE31C600000000000011D7
+t1270755782
+s4567
+i"QTUtils.h"
+i<cmath>
+i<QHBoxLayout>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.h
+c000000004BBE31C600000000000006B6
+t1270755782
+s1718
+i<QApplication>
+i<QLabel>
+i<QSlider>
+i<QLCDNumber>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.cpp
+c000000004BBE31C6000000000000075B
+t1270755782
+s1883
+i"Ray.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.h
+c000000004BBE31C60000000000000420
+t1270755782
+s1056
+i<iostream>
+i<vector>
+i"Vec3D.h"
+i"BoundingBox.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.cpp
+c000000004BBEFD860000000000000A62
+t1270807942
+s2658
+i"RayTracer.h"
+i"Ray.h"
+i"Scene.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.h
+c000000004BBEF96E00000000000004DA
+t1270806894
+s1242
+i<iostream>
+i<vector>
+i<QImage>
+i"Vec3D.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.cpp
+c000000004BBEF88C000000000000065D
+t1270806668
+s1629
+i"Scene.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.h
+c000000004BBEF8B000000000000004B2
+t1270806704
+s1202
+i<iostream>
+i<vector>
+i"Object.h"
+i"Light.h"
+i"BoundingBox.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.cpp
+c000000004BBE31C600000000000001CD
+t1270755782
+s461
+i"Triangle.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.h
+c000000004BBE31C60000000000000623
+t1270755782
+s1571
+i<iostream>
+i<vector>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vec3D.h
+c000000004BBE31C600000000000026F3
+t1270755782
+s9971
+i<cmath>
+i<iostream>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.cpp
+c000000004BBE31C6000000000000084E
+t1270755782
+s2126
+i"Vertex.h"
+i<cmath>
+i<algorithm>
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.h
+c000000004BBE31C60000000000000996
+t1270755782
+s2454
+i<iostream>
+i<vector>
+i"Vec3D.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.cpp
+c000000004BBF02260000000000001991
+t1270809126
+s6545
+i"Window.h"
+i<vector>
+i<iostream>
+i<string>
+i<cstdio>
+i<cstdlib>
+i<QDockWidget>
+i<QGroupBox>
+i<QButtonGroup>
+i<QMenuBar>
+i<QApplication>
+i<QLayout>
+i<QLabel>
+i<QProgressBar>
+i<QCheckBox>
+i<QRadioButton>
+i<QColorDialog>
+i<QLCDNumber>
+i<QPixmap>
+i<QFrame>
+i<QSplitter>
+i<QMenu>
+i<QScrollArea>
+i<QCoreApplication>
+i<QFont>
+i<QSizePolicy>
+i<QImageReader>
+i<QStatusBar>
+i<QPushButton>
+i<QMessageBox>
+i<QFileDialog>
+i"RayTracer.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.h
+c000000004BBE31C600000000000003E1
+t1270755782
+s993
+i<QMainWindow>
+i<QAction>
+i<QToolBar>
+i<QCheckBox>
+i<QGroupBox>
+i<QComboBox>
+i<QSlider>
+i<QLCDNumber>
+i<QSpinBox>
+i<QImage>
+i<QLabel>
+i<vector>
+i<string>
+i"QTUtils.h"
+i"GLViewer.h"
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app
+t1318171222
+s102
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/Info.plist
+t1318171222
+s570
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/MacOS/raymini
+t2
+s0
+
+N/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/PkgInfo
+t1318171222
+s8
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/BoundingBox.o
+t1318171223
+s44208
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/GLViewer.o
+t1318171224
+s653776
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Light.o
+t1318171223
+s44084
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Main.o
+t1318171225
+s730900
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Material.o
+t1318171223
+s44108
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Mesh.o
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Object.o
+t1318171223
+s77944
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/QTUtils.o
+t1318171224
+s378152
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Ray.o
+t1318171224
+s59212
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/RayTracer.o
+t1318171224
+s263152
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Scene.o
+t1318171224
+s223488
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Triangle.o
+t1318171223
+s69804
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Vertex.o
+t1318171223
+s89192
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Window.o
+t1318171225
+s853776
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_GLViewer.o
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_QTUtils.o
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_Window.o
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/raymini.LinkFileList
+c000000004E91B2560000000000000884
+t1318171222
+s2180
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-A0A52A2ADF7A1E2A99738674.sh
+c000000004E91B256000000000000006F
+t1318171222
+s111
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-D7BA7D76DAB5DD13389D6332.sh
+c000000004E91B256000000000000006E
+t1318171222
+s110
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/BoundingBox.cpp
+c000000004BBE31C600000000000005F8
+t1270755782
+s1528
+i"BoundingBox.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/BoundingBox.h
+c000000004BBE31C600000000000017A2
+t1270755782
+s6050
+i<vector>
+i<algorithm>
+i"Vec3D.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Edge.h
+c000000004BBE31C600000000000005FD
+t1270755782
+s1533
+i<map>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/GLViewer.cpp
+c000000004BBF022200000000000013C3
+t1270809122
+s5059
+i"GLViewer.h"
+i<iostream>
+i<cstdlib>
+i<cstdio>
+i<cassert>
+i<string>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/GLViewer.h
+c000000004BBE31C600000000000005D6
+t1270755782
+s1494
+i<QGLViewer/qglviewer.h>
+i<vector>
+i<string>
+i"Scene.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Light.cpp
+c000000004BBE31C6000000000000010A
+t1270755782
+s266
+i"Light.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Light.h
+c000000004BBE31C60000000000000484
+t1270755782
+s1156
+i<iostream>
+i<vector>
+i"Vec3D.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Main.cpp
+c000000004BBF023200000000000002A5
+t1270809138
+s677
+i<QApplication>
+i<Window.h>
+i<QDir>
+i<QPixmap>
+i<QSplashScreen>
+i<QPlastiqueStyle>
+i<QCleanlooksStyle>
+i<string>
+i<iostream>
+i"QTUtils.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Material.cpp
+c000000004BBE31C60000000000000110
+t1270755782
+s272
+i"Material.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Material.h
+c000000004BBE31C600000000000004DD
+t1270755782
+s1245
+i<iostream>
+i<vector>
+i"Vec3D.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Mesh.cpp
+c000000004BBE31C60000000000001D33
+t1270755782
+s7475
+i"Mesh.h"
+i<algorithm>
+i<iostream>
+i<fstream>
+i<sstream>
+i<GL/glut.h>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Mesh.h
+c000000004BBE31C6000000000000088C
+t1270755782
+s2188
+i<vector>
+i<string>
+i"Vertex.h"
+i"Triangle.h"
+i"Edge.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Object.cpp
+c000000004BBE31C6000000000000024F
+t1270755782
+s591
+i"Object.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Object.h
+c000000004BBE31C6000000000000045A
+t1270755782
+s1114
+i<iostream>
+i<vector>
+i"Mesh.h"
+i"Material.h"
+i"BoundingBox.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/QTUtils.cpp
+c000000004BBE31C600000000000011D7
+t1270755782
+s4567
+i"QTUtils.h"
+i<cmath>
+i<QHBoxLayout>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/QTUtils.h
+c000000004BBE31C600000000000006B6
+t1270755782
+s1718
+i<QApplication>
+i<QLabel>
+i<QSlider>
+i<QLCDNumber>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Ray.cpp
+c000000004BBE31C6000000000000075B
+t1270755782
+s1883
+i"Ray.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Ray.h
+c000000004BBE31C60000000000000420
+t1270755782
+s1056
+i<iostream>
+i<vector>
+i"Vec3D.h"
+i"BoundingBox.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/RayTracer.cpp
+c000000004BBEFD860000000000000A62
+t1270807942
+s2658
+i"RayTracer.h"
+i"Ray.h"
+i"Scene.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/RayTracer.h
+c000000004BBEF96E00000000000004DA
+t1270806894
+s1242
+i<iostream>
+i<vector>
+i<QImage>
+i"Vec3D.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Scene.cpp
+c000000004BBEF88C000000000000065D
+t1270806668
+s1629
+i"Scene.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Scene.h
+c000000004BBEF8B000000000000004B2
+t1270806704
+s1202
+i<iostream>
+i<vector>
+i"Object.h"
+i"Light.h"
+i"BoundingBox.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Triangle.cpp
+c000000004BBE31C600000000000001CD
+t1270755782
+s461
+i"Triangle.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Triangle.h
+c000000004BBE31C60000000000000623
+t1270755782
+s1571
+i<iostream>
+i<vector>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Vec3D.h
+c000000004BBE31C600000000000026F3
+t1270755782
+s9971
+i<cmath>
+i<iostream>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Vertex.cpp
+c000000004BBE31C6000000000000084E
+t1270755782
+s2126
+i"Vertex.h"
+i<cmath>
+i<algorithm>
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Vertex.h
+c000000004BBE31C60000000000000996
+t1270755782
+s2454
+i<iostream>
+i<vector>
+i"Vec3D.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Window.cpp
+c000000004BBF02260000000000001991
+t1270809126
+s6545
+i"Window.h"
+i<vector>
+i<iostream>
+i<string>
+i<cstdio>
+i<cstdlib>
+i<QDockWidget>
+i<QGroupBox>
+i<QButtonGroup>
+i<QMenuBar>
+i<QApplication>
+i<QLayout>
+i<QLabel>
+i<QProgressBar>
+i<QCheckBox>
+i<QRadioButton>
+i<QColorDialog>
+i<QLCDNumber>
+i<QPixmap>
+i<QFrame>
+i<QSplitter>
+i<QMenu>
+i<QScrollArea>
+i<QCoreApplication>
+i<QFont>
+i<QSizePolicy>
+i<QImageReader>
+i<QStatusBar>
+i<QPushButton>
+i<QMessageBox>
+i<QFileDialog>
+i"RayTracer.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/Window.h
+c000000004BBE31C600000000000003E1
+t1270755782
+s993
+i<QMainWindow>
+i<QAction>
+i<QToolBar>
+i<QCheckBox>
+i<QGroupBox>
+i<QComboBox>
+i<QSlider>
+i<QLCDNumber>
+i<QSpinBox>
+i<QImage>
+i<QLabel>
+i<vector>
+i<string>
+i"QTUtils.h"
+i"GLViewer.h"
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/build/Debug/raymini.app
+t1318171222
+s102
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/Info.plist
+t1318171222
+s570
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/MacOS/raymini
+t2
+s0
+
+N/Users/rmoutard/src/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/PkgInfo
+t1318171222
+s8
+
+N/usr/include/AvailabilityMacros.h
+c000000004A11A9B30000000000006724
+t1242671539
+s26404
+
+N/usr/include/limits.h
+c000000004BBD2CE9000000000000145A
+t1270689001
+s5210
+
+N/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/usr/include/stdarg.h
+c000000004BBD2CE900000000000000EA
+t1270689001
+s234
+
+N/usr/include/stddef.h
+c000000004BBD2CE90000000000001404
+t1270689001
+s5124
+
+N/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/usr/include/sys/types.h
+c000000004C2399480000000000002905
+t1277401416
+s10501
+
+N/usr/lib/libobjc.A.dylib
+c000000004DF9C41C000000000024C610
+t1308214300
+s2410000
+
+NInfo.plist
+c000000004DA085BB0000000000000256
+t1302365627
+s598
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies339864020#339864022#0(0"0(0#1#0"8247620834010738688#0"0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/BoundingBox.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.486966
+e339864023.362812
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/BoundingBox.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.cpp339864022#339864023#0(0"0(0#0#74"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.cpp8604538048#1751"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/BoundingBox.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/BoundingBox.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/BoundingBox.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/BoundingBox.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/GLViewer.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.483490
+e339864024.569026
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/GLViewer.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.cpp339864022#339864024#0(0"0(0#0#71"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.cpp8605310624#1745"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/GLViewer.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/GLViewer.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/GLViewer.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/GLViewer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Light.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864023.364748
+e339864023.817463
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Light.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.cpp339864023#339864023#0(0"0(0#0#68"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.cpp8605021632#1739"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Light.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Light.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Light.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Light.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Main.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864023.817591
+e339864025.380670
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Main.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Main.cpp339864023#339864025#0(0"0(0#0#67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Main.cpp8604037696#1737"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Main.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Main.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Main.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Material.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.487553
+e339864023.364621
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Material.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.cpp339864022#339864023#0(0"0(0#0#71"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.cpp8594651552#1745"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Material.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Material.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Material.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Material.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Mesh.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.486332
+e339864023.433176
+r0
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Mesh.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:13:21: error: GL/glut.h: No such file or directory
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp: In function 'void glVertexVec3Df(const Vec3Df&)':
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:145: error: 'glVertex3f' was not declared in this scope
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp: In function 'void glNormalVec3Df(const Vec3Df&)':
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:149: error: 'glNormal3f' was not declared in this scope
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp: In member function 'void Mesh::renderGL(bool) const':
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:162: error: 'GL_TRIANGLES' was not declared in this scope
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:162: error: 'glBegin' was not declared in this scope
+o/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:180: error: 'glEnd' was not declared in this scope
+lSLF07#2@75"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp339864022#339864023#0(1094"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:13:21: error: GL/glut.h: No such file or directory/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp: In function 'void glVertexVec3Df(const Vec3Df&)':/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:145: error: 'glVertex3f' was not declared in this scope/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp: In function 'void glNormalVec3Df(const Vec3Df&)':/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:149: error: 'glNormal3f' was not declared in this scope/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp: In member function 'void Mesh::renderGL(bool) const':/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:162: error: 'GL_TRIANGLES' was not declared in this scope/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:162: error: 'glBegin' was not declared in this scope/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp:180: error: 'glEnd' was not declared in this scope6(4@36"GL/glut.h: No such file or directory339864022#0#119#0(6@67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp292448582#13#0#13#0#28"*: No such file or directory0(4@43"'glVertex3f' was not declared in this scope339864023#238#124#0(6@67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp292448582#145#0#145#0#34"'*' was not declared in this scope0(4@43"'glNormal3f' was not declared in this scope339864023#481#124#0(6@67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp292448582#149#0#149#0#34"'*' was not declared in this scope0(4@45"'GL_TRIANGLES' was not declared in this scope339864023#728#126#0(6@67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp292448582#162#0#162#0#34"'*' was not declared in this scope0(4@40"'glBegin' was not declared in this scope339864023#854#121#0(6@67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp292448582#162#0#162#0#34"'*' was not declared in this scope0(4@38"'glEnd' was not declared in this scope339864023#975#119#0(6@67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp292448582#180#0#180#0#34"'*' was not declared in this scope0(0#0#67"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp8605045856#1737"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Mesh.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Mesh.o1#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Mesh.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Mesh.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Object.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864023.362954
+e339864024.000710
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Object.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.cpp339864023#339864024#0(0"0(0#0#69"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.cpp7665776579929715712#1741"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Object.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Object.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Object.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Object.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/QTUtils.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.484064
+e339864024.102268
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/QTUtils.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.cpp339864022#339864024#0(0"0(0#0#70"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.cpp8605208832#1743"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/QTUtils.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/QTUtils.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/QTUtils.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/QTUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Ray.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864023.696547
+e339864024.235448
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Ray.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.cpp339864023#339864024#0(0"0(0#0#66"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.cpp8605345280#1735"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Ray.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Ray.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Ray.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Ray.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/RayTracer.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864023.433308
+e339864024.520066
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/RayTracer.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.cpp339864023#339864024#0(0"0(0#0#72"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.cpp8605523584#1747"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/RayTracer.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/RayTracer.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/RayTracer.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/RayTracer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Scene.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864023.380700
+e339864024.751449
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Scene.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.cpp339864023#339864024#0(0"0(0#0#68"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.cpp8605584256#1739"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Scene.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Scene.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Scene.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Scene.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Triangle.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.485478
+e339864023.380568
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Triangle.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.cpp339864022#339864023#0(0"0(0#0#71"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.cpp8605116736#1745"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Triangle.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Triangle.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Triangle.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Triangle.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Vertex.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.484636
+e339864023.696420
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Vertex.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.cpp339864022#339864023#0(0"0(0#0#69"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.cpp8605149824#1741"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Vertex.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Vertex.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Vertex.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Vertex.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Window.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864022.482816
+e339864025.031352
+r1
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Window.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.cpp339864022#339864025#0(0"0(0#0#69"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.cpp8605361216#1741"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Window.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Window.o0#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/Window.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/Window.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_GLViewer.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864024.006609
+e339864024.015572
+r0
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_GLViewer.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@88"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp339864024#339864024#0(329"i686-apple-darwin10-gcc-4.2.1: /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/usr/bin/gcc-4.2 failed with exit code 11(4@58"Command /Developer/usr/bin/gcc-4.2 failed with exit code 1339864024#18446744073709551615#0#0(1@0"0(0#0#80"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp8604536608#1758"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_GLViewer.o1#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_GLViewer.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/.moc/moc_GLViewer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_QTUtils.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864024.015684
+e339864024.021404
+r0
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_QTUtils.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@87"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp339864024#339864024#0(328"i686-apple-darwin10-gcc-4.2.1: /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/usr/bin/gcc-4.2 failed with exit code 11(4@58"Command /Developer/usr/bin/gcc-4.2 failed with exit code 1339864024#18446744073709551615#0#0(1@0"0(0#0#79"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp8604337728#1756"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_QTUtils.o1#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_QTUtils.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/.moc/moc_QTUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_Window.o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s339864024.000916
+e339864024.006503
+r0
+xCompileC
+x.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_Window.o
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@86"Compile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp339864024#339864024#0(327"i686-apple-darwin10-gcc-4.2.1: /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/usr/bin/gcc-4.2 failed with exit code 11(4@58"Command /Developer/usr/bin/gcc-4.2 failed with exit code 1339864024#18446744073709551615#0#0(1@0"0(0#0#78"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp8604743488#1754"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini.hmap -F/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/Library/Frameworks/QtXml.framework/Versions/4/Headers -I/usr/include/QtXml -I/usr/include -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -I.moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources/i386 -I/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources -pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_Window.o1#
+
+CCompileC .obj/raymini.build/Debug/raymini.build/Objects-normal/i386/moc_Window.o /Users/rmoutard/src/infsi350_Projet-2010/raymini/.moc/moc_Window.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CLd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/MacOS/raymini normal i386
+r0
+
+CLd /Users/rmoutard/src/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/MacOS/raymini normal i386
+r0
+
+CPBXCp /Users/raphael/Desktop/infsi350_Projet-2010/raymini/raymini.app build/Debug/raymini.app
+r0
+
+CPhaseScriptExecution "Qt Preprocessors" /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-A0A52A2ADF7A1E2A99738674.sh
+s339864022.471302
+e339864022.482750
+r0
+xPhaseScriptExecution
+xQt Preprocessors
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-A0A52A2ADF7A1E2A99738674.sh
+omake: *** /Users/raphael/Desktop/infsi350_Projet-2010/raymini: No such file or directory.  Stop.
+lSLF07#2@42"Run custom shell script 'Qt Preprocessors'339864022#339864022#0(137"make: *** /Users/raphael/Desktop/infsi350_Projet-2010/raymini: No such file or directory.  Stop.Command /bin/sh failed with exit code 22(13@97"make: *** /Users/raphael/Desktop/infsi350_Projet-2010/raymini: No such file or directory.  Stop.339864022#0#97#0(1@0"0(4@39"Command /bin/sh failed with exit code 2339864022#18446744073709551615#0#0(1@0"0(0#0#0"8605485376#17915"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER rmoutard    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build    setenv BUILD_ROOT /Users/raphael/Desktop/infsi350_Projet-2010/raymini    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv CACHE_ROOT /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug    setenv CONTENTS_FOLDER_PATH raymini.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH raymini.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/raymini.dst    setenv DWARF_DSYM_FILE_NAME raymini.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv DYLIB_COMPATIBILITY_VERSION 1.0    setenv DYLIB_CURRENT_VERSION 1.0.0    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH raymini.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH raymini.app/Contents/MacOS    setenv EXECUTABLE_NAME raymini    setenv EXECUTABLE_PATH raymini.app/Contents/MacOS/raymini    setenv FILE_LIST /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH raymini.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME raymini.app    setenv GCC3_VERSION 3.3    setenv GCC_DYNAMIC_NO_PIC YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include\" /Library/Frameworks/QtCore.framework/Versions/4/Headers /usr/include/QtCore /Library/Frameworks/QtGui.framework/Versions/4/Headers /usr/include/QtGui /Library/Frameworks/QtOpenGL.framework/Versions/4/Headers /usr/include/QtOpenGL /Library/Frameworks/QtXml.framework/Versions/4/Headers /usr/include/QtXml /usr/include /usr/include /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers /System/Library/Frameworks/AGL.framework/Headers .moc /usr/local/include /System/Library/Frameworks/CarbonCore.framework/Headers /usr/local/Qt4.7/mkspecs/macx-xcode"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH raymini.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH raymini.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/raymini.dst/Users/rmoutard/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER rmoutard    setenv INSTALL_PATH /Users/rmoutard/Applications    setenv INSTALL_ROOT /tmp/raymini.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH raymini.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug\" /Library/Frameworks /usr/lib /System/Library/Frameworks/ /tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib"    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/raymini.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH raymini.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.4    setenv MAC_OS_X_VERSION_ACTUAL 1068    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0608    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal    setenv OBJROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "-pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_CPLUSPLUSFLAGS "-pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_LDFLAGS "-headerpad_max_install_names -L/Library/Frameworks -F/Library/Frameworks -L/usr/lib -lQGLViewer -L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib -F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH raymini.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PHONEGAPLIB /Users/raphael/Documents/PhoneGapLib    setenv PKGINFO_FILE_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/PkgInfo    setenv PKGINFO_PATH raymini.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 10M2423    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH raymini.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH raymini.app/Contents/PrivateHeaders    setenv PRODUCT_NAME raymini    setenv PRODUCT_SETTINGS_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT raymini    setenv PROJECT_DERIVED_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/DerivedSources    setenv PROJECT_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv PROJECT_FILE_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/raymini.xcodeproj    setenv PROJECT_NAME raymini    setenv PROJECT_TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build    setenv PUBLIC_HEADERS_FOLDER_PATH raymini.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH raymini.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH raymini.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH raymini.app/Contents/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv SRCROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/SymbolRepositories    setenv SYMROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME raymini    setenv TARGET_BUILD_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv TARGET_NAME raymini    setenv TARGET_TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_FILES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_ROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH raymini.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER rmoutard    setenv USER_APPS_DIR /Users/rmoutard/Applications    setenv USER_LIBRARY_DIR /Users/rmoutard/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH raymini.app/Contents/version.plist    setenv VERSION_INFO_BUILDER rmoutard    setenv VERSION_INFO_FILE raymini_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:raymini  PROJECT:raymini-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME raymini.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv YACCFLAGS -d    /bin/sh -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-A0A52A2ADF7A1E2A99738674.sh2#
+
+CPhaseScriptExecution "Qt Preprocessors" /Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-A0A52A2ADF7A1E2A99738674.sh
+r0
+
+CPhaseScriptExecution "Qt Qmake" /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-D7BA7D76DAB5DD13389D6332.sh
+s339864022.425318
+e339864022.471208
+r0
+xPhaseScriptExecution
+xQt Qmake
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-D7BA7D76DAB5DD13389D6332.sh
+omake: *** /Users/raphael/Desktop/infsi350_Projet-2010/raymini: No such file or directory.  Stop.
+lSLF07#2@34"Run custom shell script 'Qt Qmake'339864022#339864022#0(137"make: *** /Users/raphael/Desktop/infsi350_Projet-2010/raymini: No such file or directory.  Stop.Command /bin/sh failed with exit code 22(13@97"make: *** /Users/raphael/Desktop/infsi350_Projet-2010/raymini: No such file or directory.  Stop.339864022#0#97#0(1@0"0(4@39"Command /bin/sh failed with exit code 2339864022#18446744073709551615#0#0(1@0"0(0#0#0"8594788064#17915"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER rmoutard    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build    setenv BUILD_ROOT /Users/raphael/Desktop/infsi350_Projet-2010/raymini    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv CACHE_ROOT /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug    setenv CONTENTS_FOLDER_PATH raymini.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH raymini.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/raymini.dst    setenv DWARF_DSYM_FILE_NAME raymini.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv DYLIB_COMPATIBILITY_VERSION 1.0    setenv DYLIB_CURRENT_VERSION 1.0.0    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH raymini.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH raymini.app/Contents/MacOS    setenv EXECUTABLE_NAME raymini    setenv EXECUTABLE_PATH raymini.app/Contents/MacOS/raymini    setenv FILE_LIST /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH raymini.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME raymini.app    setenv GCC3_VERSION 3.3    setenv GCC_DYNAMIC_NO_PIC YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/include\" /Library/Frameworks/QtCore.framework/Versions/4/Headers /usr/include/QtCore /Library/Frameworks/QtGui.framework/Versions/4/Headers /usr/include/QtGui /Library/Frameworks/QtOpenGL.framework/Versions/4/Headers /usr/include/QtOpenGL /Library/Frameworks/QtXml.framework/Versions/4/Headers /usr/include/QtXml /usr/include /usr/include /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers /System/Library/Frameworks/AGL.framework/Headers .moc /usr/local/include /System/Library/Frameworks/CarbonCore.framework/Headers /usr/local/Qt4.7/mkspecs/macx-xcode"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH raymini.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH raymini.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/raymini.dst/Users/rmoutard/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER rmoutard    setenv INSTALL_PATH /Users/rmoutard/Applications    setenv INSTALL_ROOT /tmp/raymini.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH raymini.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/raymini-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug\" /Library/Frameworks /usr/lib /System/Library/Frameworks/ /tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib"    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal/i386/raymini.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH raymini.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.4    setenv MAC_OS_X_VERSION_ACTUAL 1068    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0608    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Objects-normal    setenv OBJROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "-pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_CPLUSPLUSFLAGS "-pipe -O2 -O3 -mfpmath=sse -msse2 -Wall -W -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_LDFLAGS "-headerpad_max_install_names -L/Library/Frameworks -F/Library/Frameworks -L/usr/lib -lQGLViewer -L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib -F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH raymini.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PHONEGAPLIB /Users/raphael/Documents/PhoneGapLib    setenv PKGINFO_FILE_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/PkgInfo    setenv PKGINFO_PATH raymini.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 10M2423    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH raymini.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH raymini.app/Contents/PrivateHeaders    setenv PRODUCT_NAME raymini    setenv PRODUCT_SETTINGS_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT raymini    setenv PROJECT_DERIVED_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/DerivedSources    setenv PROJECT_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv PROJECT_FILE_PATH /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/raymini.xcodeproj    setenv PROJECT_NAME raymini    setenv PROJECT_TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build    setenv PUBLIC_HEADERS_FOLDER_PATH raymini.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH raymini.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH raymini.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/OH/OH360xjuGxCNqoHfehoUV++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH raymini.app/Contents/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv SRCROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/SymbolRepositories    setenv SYMROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME raymini    setenv TARGET_BUILD_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug    setenv TARGET_NAME raymini    setenv TARGET_TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_FILES_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_FILE_DIR /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build    setenv TEMP_ROOT /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH raymini.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER rmoutard    setenv USER_APPS_DIR /Users/rmoutard/Applications    setenv USER_LIBRARY_DIR /Users/rmoutard/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH raymini.app/Contents/version.plist    setenv VERSION_INFO_BUILDER rmoutard    setenv VERSION_INFO_FILE raymini_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:raymini  PROJECT:raymini-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME raymini.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv YACCFLAGS -d    /bin/sh -c /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-D7BA7D76DAB5DD13389D6332.sh2#
+
+CPhaseScriptExecution "Qt Qmake" /Users/rmoutard/src/infsi350_Projet-2010/raymini/.obj/raymini.build/Debug/raymini.build/Script-D7BA7D76DAB5DD13389D6332.sh
+r0
+
+CProcessInfoPlistFile /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/Info.plist Info.plist
+s339864022.392038
+e339864022.425248
+r1
+xProcessInfoPlistFile
+x/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist339864022#339864022#0(0"0(0#0#69"/Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/Info.plist28710920075673648#362"    cd /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini    builtin-infoPlistUtility Info.plist -genpkginfo /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/Info.plist0#
+
+CProcessInfoPlistFile /Users/rmoutard/src/infsi350_Projet-2010/raymini/build/Debug/raymini.app/Contents/Info.plist Info.plist
+r0
+
+CTouch /Users/rmoutard/Desktop/perso/infsi350_Projet-2010/raymini/build/Debug/raymini.app
+r0
+
+CTouch /Users/rmoutard/src/infsi350_Projet-2010/raymini/build/Debug/raymini.app
+r0
+
