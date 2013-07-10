@@ -1,18 +1,18 @@
-#include <QApplication>
-#include <GLViewer.h>
-#include <Window.h>
 #include <string>
 #include <iostream>
+
 #include <gtest/gtest.h>
 
-#include "QTUtils.h"
+#include <QApplication>
+
+#include "Window.h"
 
 using namespace std;
 
 int main (int argc, char **argv) {
 
-  testing::InitGoogleTest(&argc, argv);
-  RUN_ALL_TESTS();
+  //testing::InitGoogleTest(&argc, argv);
+  //RUN_ALL_TESTS();
 
   QApplication raymini (argc, argv);
   //setBoubekQTStyle (raymini);

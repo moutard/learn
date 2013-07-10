@@ -11,7 +11,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-#include <GLUT/glut.h>
+#include <GL/glut.h>
 using namespace std;
 
 void Mesh::clear () {
