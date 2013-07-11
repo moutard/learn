@@ -17,8 +17,6 @@ enum Direction {
 
 };
 
-inline unsigned int oppositeDirection(unsigned int direction);
-
 // Should be abstract class.
 class Maze {
   public:
@@ -40,5 +38,6 @@ class Maze {
 
 };
 
+inline unsigned int oppositeDirection(unsigned int direction);
 void FindCheese(Maze * maze);
 #endif

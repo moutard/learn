@@ -1,5 +1,8 @@
 #include "maze.h"
 #include <vector>
+#include <iostream>
+
+using namespace std;
 
 Maze::Maze(){};
 Maze::~Maze(){};
@@ -20,11 +23,16 @@ bool Maze::Success(){
   return false;
 };
 
-
+/**
+ * Given a direction as an unsigned int, return the opposite one.
+ * i.e. if you take this direction you go back to the previous cell.
+ * 1 <-> 3
+ * 2 <-> 4
+ */
 unsigned int oppositeDirection(unsigned int direction) {
-  // direction - 1 -> to go back to 0,1,2,3 get the opposite with
-  // direction + 2 % 4
-  // direction + 1 go back to 1,2,3,4
+  // direction - 1 -> translate in space {0,1,2,3}
+  // direction + 2 % 4 -> get the opposite in the space {0,1,2,3}
+  // direction + 1 -> translate to space {1,2,3,4}
   return ((direction + 1) % 4) + 1;
 };
 
@@ -44,6 +52,13 @@ unsigned int oppositeDirection(unsigned int direction) {
  *  if you go back to the initial position and there is no direction remaining
  *  then stop the loop there is no solution to the maze. You can't find the
  *  cheese.
+ *
+ *  Analysis: if the maze is a grid of size N*N.
+ *  - Space complexity: O(N*N) in worst case you visit all the cells before finding
+ *  the cheese, the vector path has a length N^2
+ *  - Time complexity: looks like graph traversal. Each vertex is a cell,
+ *  if there two neighbors cells that have no wall between, there is a edge
+ *  between two corresponding vertices. O(V^2) visiting all the cells.
  */
 void FindCheese(GridArray * maze) {
   // Vector that stores the path of the mouse.
@@ -52,37 +67,37 @@ void FindCheese(GridArray * maze) {
   // direction that allow to go to the next cell.
   vector<unsigned int> path;
 
-  // the initial cell.
+  // The initial cell.
   path.push_back(0);
 
-  // while there is cell to visit.
+  // While there is cell to visit.
   while (path.size() > 0) {
     unsigned int last_index = path.size() - 1;
 
     if (path[last_index] > 4) {
       // There is no direction that works you are in a dead end.
       path.pop_back();
-      // go back to the previous cell.
+      // Go back to the previous cell.
       maze->Move(oppositeDirection(path.back()));
     } else {
-      // there is still direction you can try.
+      // There is still direction you can try.
       path[last_index] += 1;
       if((last_index >= 1) // There is a cell before.
-          && (path[last_index] == oppositeDirection(path[last_index -1])) // this cell is not the opposite one
-
+          && (path[last_index] == oppositeDirection(path[last_index -1])) // This cell is not the opposite one
         ) {
-        // the direction you want to try go back to the previous cell you
+        // The direction you want to try go back to the previous cell you
         // already visited, so don't try it.
         path[last_index] += 1;
       }
       if (maze->Move(path.back())) {
-        // you move to a good direction.
+        // You move to a good direction.
         cout << path.back() << endl;
         path.push_back(0);
 
         // Check if the cheese is in the cell you just explored.
         if (maze->Success()) {
-          // print path:
+          // Print path, consecutive direction you have to take from the
+          // first cell to reach the cheese.
           for(unsigned int i = 0; i < path.size(); ++i ) {
             cout << path[i] << " ";
           }
@@ -92,8 +107,8 @@ void FindCheese(GridArray * maze) {
         }
 
       } else {
-        // there is a wall in the direction you tried.
-        // try another direction.
+        // There is a wall in the direction you tried.
+        // You will try another direction if needed in the next while loop.
       }
     }
   }
