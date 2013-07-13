@@ -16,7 +16,7 @@ HEADERS = GLViewer.h \
           Ray.h \
     Window.h \
     Vec3D.h \
-    kdtree.h
+    #kdtree.h
 
 SOURCES = GLViewer.cpp \
           QTUtils.cpp \
@@ -33,7 +33,7 @@ SOURCES = GLViewer.cpp \
           Main.cpp \ 
     Window.cpp \
     intersection_tests.cpp \
-    kdtree.cpp
+    #kdtree.cpp
           
 DESTDIR = .
 

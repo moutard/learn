@@ -60,11 +60,12 @@ void Scene::buildDefaultScene (bool HD) {
     cout << "scene buildDefaultScene" << endl;
 
     // Load all the Mesh.
+
     Mesh groundMesh;
     if (HD)
-        groundMesh.loadOFF ("models/ground_HD.off");
+        groundMesh.loadOFF ("/Users/rmoutard/src/learn/cpp/raymini/models/ground_HD.off");
     else
-        groundMesh.loadOFF ("models/ground.off");
+        groundMesh.loadOFF ("/Users/rmoutard/src/learn/cpp/raymini/models/ground.off");
     cout << "ground mesh loaded" << endl;
 
     // Create an Object using a Mesh and a Material.
@@ -73,9 +74,9 @@ void Scene::buildDefaultScene (bool HD) {
     objects.push_back (ground);
     Mesh ramMesh;
     if (HD)
-        ramMesh.loadOFF ("models/ram_HD.off");
+        ramMesh.loadOFF ("/Users/rmoutard/src/learn/cpp/raymini/models/ram_HD.off");
     else
-        ramMesh.loadOFF ("models/ram.off");
+        ramMesh.loadOFF ("/Users/rmoutard/src/learn/cpp/raymini/models/ram.off");
     cout << "ram mesh loaded" << endl;
 
     // Give a color to the Ram using a specific material.
