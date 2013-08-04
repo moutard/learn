@@ -19,6 +19,9 @@ class KDTreeNode {
 public:
     KDTreeNode();
     KDTreeNode(BoundingBox oBoundingBox, int depth);
+    KDTreeNode(BoundingBox oBoundingBox,
+               const std::vector<const Triangle*> & triangles,
+               int depth);
     ~KDTreeNode();
     std::vector<const Triangle*> & getTriangles();
     BoundingBox & getBoundingBox();
@@ -63,7 +66,7 @@ public:
     KDTree(const std::vector<Vertex> & vertices, const std::vector<Triangle> & triangles, int depth);
     KDTreeNode * getRoot();
     int getCurrentAxis();
-    BoundingBox getBoundingBox(const std::vector<Vertex> & vertices);
+    BoundingBox createBoundingBox(const std::vector<Vertex> & vertices);
 
     struct sortstruct {
       // sortstruct needs to know its containing object
