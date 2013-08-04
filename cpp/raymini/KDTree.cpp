@@ -1,5 +1,6 @@
 #include "KDTree.h"
 #include <algorithm>
+#include <iostream>
 #include "Vertex.h"
 #define MAX_DEPTH 5
 
@@ -99,4 +100,6 @@ BoundingBox KDTree::createBoundingBox(const vector<Vertex> & vertices) {
         maxVec3D[1] = max(maxVec3D[1], (*it).getPos()[1]);
         maxVec3D[2] = max(maxVec3D[2], (*it).getPos()[2]);
     }
+
+    return BoundingBox(minVec3D, maxVec3D);
 }

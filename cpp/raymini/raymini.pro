@@ -33,8 +33,8 @@ SOURCES = GLViewer.cpp \
           Main.cpp \ 
     Window.cpp \
     #intersection_tests.cpp \
-    #KDTree_tests.cpp
-    KDTree.cpp
+    KDTree.cpp \
+    KDTree_tests.cpp
           
 DESTDIR = .
 

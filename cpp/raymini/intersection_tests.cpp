@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <Ray.h>
+#include "Ray.h"
 
 TEST(Ray_intersect, ParalellRay) {
     Ray r0 = Ray(Vec3Df(0.0, 0.0, 0.0), Vec3Df(0.0, 1.0, -1.0));
