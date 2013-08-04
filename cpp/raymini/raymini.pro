@@ -16,7 +16,7 @@ HEADERS = GLViewer.h \
           Ray.h \
     Window.h \
     Vec3D.h \
-    #kdtree.h
+    KDTree.h
 
 SOURCES = GLViewer.cpp \
           QTUtils.cpp \
@@ -32,8 +32,9 @@ SOURCES = GLViewer.cpp \
           Ray.cpp \
           Main.cpp \ 
     Window.cpp \
-    intersection_tests.cpp \
-    #kdtree.cpp
+    #intersection_tests.cpp \
+    #KDTree_tests.cpp
+    KDTree.cpp
           
 DESTDIR = .
 
@@ -222,3 +223,5 @@ DEPENDPATH += $$PWD/../../gtest
 win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../../gtest/release/gtest.lib
 else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../../gtest/debug/gtest.lib
 else:unix: PRE_TARGETDEPS += $$PWD/../../gtest/libgtest.a
+
+#INCLUDEPATH += /usr/local/include/boost_1_54_0 #Path of boost Library.
