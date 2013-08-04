@@ -3,46 +3,37 @@
 #include "Vertex.h"
 #define MAX_DEPTH 5
 
-bool xAxisComparator(Vertex & v0, Vertex & v1){
-    return v0.getPos()[0] < v1.getPos()[0];
-}
-bool yAxisComparator(Vertex & v0, Vertex & v1){
-    return v0.getPos()[1] < v1.getPos()[1];
-}
-bool zAxisComparator(Vertex & v0, Vertex & v1){
-    return v0.getPos()[2] < v1.getPos()[2];
-}
+KDTreeNode::KDTreeNode(){}
 
-KDTreeNode::KDTreeNode() {
+KDTreeNode::KDTreeNode(BoundingBox oBoundingBox, int depth):
+    _oBoundingBox(oBoundingBox), _iDepth(depth) {
 
 }
 
-KDTreeNode::KDTreeNode(vector<int> _vertices, int depth) {
-    if(depth < MAX_DEPTH) {
-        int median = _vertices.size() / 2;
-        left = KDTreeNode(_vertices, depth + 1)
-    } else {
-        // It's a Leaf.
-        vertices = _vertices; // copy operator;
-    }
+KDTreeNode::~KDTreeNode() {
 
 }
 
-KDTreeNode::getVertices() {
-    return vertices;
+std::vector<const Triangle*> & KDTreeNode::getTriangles() {
+    return _vTriangles;
 }
 
-KDTreeNode::getDepth() {
-    return depth;
+BoundingBox & KDTreeNode::getBoundingBox() {
+    return _oBoundingBox;
 }
 
-KDTree::KDTree(Mesh & mesh) {
-    root = NULL;
+int KDTreeNode::getDepth() {
+    return _iDepth;
+}
 
-    bool (*axisComparator)() =  xAxisComparator;
-    int median = mesh.getVertices().size() / 2;
-    std::sort (mesh.getVertices().begin(),
-               mesh.getVertices().end(),
-               axisComparator);
+bool KDTreeNode::isLeaf() {
+    return _bIsLeaf;
+}
 
+KDTreeNode * KDTreeNode::getLeft() {
+    return _poLeft;
+}
+
+KDTreeNode * KDTreeNode::getRight() {
+    return _poRight;
 }

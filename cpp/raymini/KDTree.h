@@ -24,6 +24,8 @@ public:
     BoundingBox & getBoundingBox();
     int getDepth();
     bool isLeaf();
+    KDTreeNode * getLeft();
+    KDTreeNode * getRight();
 protected:
     // False if node True if leaf.
     bool _bIsLeaf;
