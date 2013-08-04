@@ -224,4 +224,4 @@ win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../../gtest/releas
 else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../../gtest/debug/gtest.lib
 else:unix: PRE_TARGETDEPS += $$PWD/../../gtest/libgtest.a
 
-#INCLUDEPATH += /usr/local/include/boost_1_54_0 #Path of boost Library.
+INCLUDEPATH += /usr/local/include/boost_1_54_0 #Path of boost Library.

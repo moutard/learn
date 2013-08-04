@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <iostream>
 #include "Vertex.h"
+#include <boost/unordered_set.hpp>
+
 #define MAX_DEPTH 5
 
 using namespace std;
@@ -99,6 +101,26 @@ BoundingBox KDTree::createBoundingBox(const vector<Vertex> & vertices) {
         maxVec3D[0] = max(maxVec3D[0], (*it).getPos()[0]);
         maxVec3D[1] = max(maxVec3D[1], (*it).getPos()[1]);
         maxVec3D[2] = max(maxVec3D[2], (*it).getPos()[2]);
+    }
+
+    return BoundingBox(minVec3D, maxVec3D);
+}
+
+BoundingBox KDTree::createBoundingBox(const boost::unordered_set<Vertex*> & vertices) {
+    if (vertices.empty()) {
+        throw "Try to create an empty BoundingBox ";
+    }
+    boost::unordered_set<Vertex*>::const_iterator it = vertices.begin();
+    Vec3Df minVec3D, maxVec3D;
+    minVec3D = (**it).getPos();
+    maxVec3D = (**it).getPos();
+    for (it; it != vertices.end(); ++it) {
+        minVec3D[0] = min(minVec3D[0], (**it).getPos()[0]);
+        minVec3D[1] = min(minVec3D[1], (**it).getPos()[1]);
+        minVec3D[2] = min(minVec3D[2], (**it).getPos()[2]);
+        maxVec3D[0] = max(maxVec3D[0], (**it).getPos()[0]);
+        maxVec3D[1] = max(maxVec3D[1], (**it).getPos()[1]);
+        maxVec3D[2] = max(maxVec3D[2], (**it).getPos()[2]);
     }
 
     return BoundingBox(minVec3D, maxVec3D);

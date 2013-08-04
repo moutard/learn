@@ -2,7 +2,7 @@
 #define KDTREE_H
 
 #include <vector>
-
+#include <boost/unordered_set.hpp>
 
 #include "Vertex.h"
 #include "Triangle.h"
@@ -67,7 +67,7 @@ public:
     KDTreeNode * getRoot();
     int getCurrentAxis();
     BoundingBox createBoundingBox(const std::vector<Vertex> & vertices);
-
+    BoundingBox createBoundingBox(const boost::unordered_set<Vertex*> & vertices);
     struct sortstruct {
       // sortstruct needs to know its containing object
       KDTree * _tree;

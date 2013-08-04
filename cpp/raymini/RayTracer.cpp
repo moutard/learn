@@ -62,7 +62,8 @@ QImage RayTracer::render (const Vec3Df & camPos,    // camera position in the sp
             Ray ray (camPos, dir);
             Vec3Df intersectionPoint;
 
-            bool hasIntersection = ray.intersect (scene, intersectionPoint);
+            bool hasIntersection = ray.intersect (bbox, intersectionPoint);
+            //bool hasIntersection = ray.intersect (scene, intersectionPoint);
             Vec3Df c (backgroundColor);
             if (hasIntersection)
                 //c = 255.f * ((intersectionPoint - minBb) / rangeBb);
