@@ -13,3 +13,4 @@ a.out
 CMakeFiles/
 Makefile
 *.user
+.DS_Store
