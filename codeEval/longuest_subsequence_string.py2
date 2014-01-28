@@ -1,0 +1,37 @@
+import sys
+
+lPreComputedValues = []
+def initPrecomputedValues(l1, l2):
+  for i in xrange(0, l1):
+    lPreComputedValues.append([-1]*l2)
+
+def longuestSubSequence(sString1, sString2, i, j):
+  if i < 0 or j < 0:
+    return ""
+  if lPreComputedValues[i][j] != -1:
+    return lPreComputedValues[i][j]
+  if sString1[i] == sString2[j]:
+    lPreComputedValues[i][j] =  longuestSubSequence(sString1, sString2, i-1, j-1) + sString1[i]
+    return lPreComputedValues[i][j]
+  else :
+    s1 = longuestSubSequence(sString1, sString2, i-1, j)
+    s2 = longuestSubSequence(sString1, sString2, i, j-1)
+    if len(s1) > len(s2):
+      lPreComputedValues[i][j] = s1
+    else :
+      lPreComputedValues[i][j] = s2
+    return lPreComputedValues[i][j]
+
+test_cases = open(sys.argv[1], 'r')
+for test in test_cases:
+  lPreComputedValues = []
+  if len(test) > 0:
+    l = test.rstrip('\n').split(';')
+    if len(l) >= 2:
+      sString1 = l[0]
+      sString2 = l[1]
+      initPrecomputedValues(len(sString1), len(sString2))
+      i = longuestSubSequence(sString1, sString2, len(sString1) - 1, len(sString2) - 1)
+      print i
+
+test_cases.close()
