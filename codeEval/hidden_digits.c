@@ -1,27 +1,38 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
-unsigned int BUFFER_SIZE = 5;
+unsigned int BUFFER_SIZE = 1024;
 
-int decode (char * buffer, unsigned int iBufferSize) {
-  unsigned int i;
+int decode (char * buffer) {
+
+  // Return.
   int iErrorCode = 0;
-  // the last character is the null \0.
+
+  // The last character is the null \0.
   unsigned int iLength = (unsigned)strlen(buffer);
+  unsigned int i;
   for (i = 0; i <  iLength; ++i) {
-    char c = buffer[i];
+    char cCurrentChar = buffer[i];
     char a = 97; // number according to asci table.
     char j = 106;
-    if (a <= c && c <= j) {
+    char zero = 48;
+    char neuf = 57;
+
+    // Reach the end of the line.
+    // if nothing to print in the buffer return 3.
+    if (cCurrentChar == '\n') {
+      if (iErrorCode) {
+        return 2;
+      } else {
+        return 3;
+      }
+    }
+
+    if (a <= cCurrentChar && cCurrentChar <= j) {
       buffer[i] -= 49;
       iErrorCode = 1;
-    } else if (c == 5) {
-      // end of line.
-      if (iErrorCode == 0) {
-        iErrorCode = 3;
-      } else {
-        iErrorCode = 2;
-      }
+    } else if (zero <= cCurrentChar && cCurrentChar <= neuf) {
+      iErrorCode = 1;
     } else {
       buffer[i] = 46; // point by default.
     }
@@ -29,27 +40,15 @@ int decode (char * buffer, unsigned int iBufferSize) {
   return iErrorCode;
 };
 
-void readFileByLine(char * filename) {
-  char * line = NULL;
-  size_t len = 0;
-  ssize_t read;
+void printDecodedBuffer(const char * c) {
 
-  FILE * oFile = fopen(filename, "r");
-
-  if (oFile != NULL) {
-    while ((read = getline(&line, &len, oFile)) != -1 ) {
-      printf("%s", line);
+  unsigned int i;
+  for (i=0; i < strlen(c); i++) {
+    if (c[i] != 46 && c[i] != '\n') {
+      printf("%c", c[i]);
     }
   }
 
-};
-
-void printDecodedBuffer(char * buffer) {
-  unsigned int i;
-  unsigned int iLength = (unsigned)strlen(buffer);
-  for (i = 0; i <  iLength; ++i) {
-    if (buffer[i] != 46) prinf("%c", buffer[i]);
-  }
 };
 
 void readFileByBuffer(char * filename, unsigned int iBufferSize) {
@@ -64,22 +63,26 @@ void readFileByBuffer(char * filename, unsigned int iBufferSize) {
     // size_t iNewLength = fread(buffer, sizeof(char), bufferSize, oFile);
     int iLineCode = 0;
     while (fgets(buffer, iBufferSize, oFile) != NULL) {
-      // the last character of the buffer is null. \0
-      // so there is only iSizeBuffer -1 letters in the buffer.
-      printf("%s@", buffer);
-      int iErrorCode = decode(buffer, iBufferSize);
-      if (iErrorCode == 0) {
-        // nothing to do.
-      } else if (iErrorCode == 1) {
-        iLineCode = 1;
-        printDecodedBuffer(buffer);
-      } else if (iErrorCode == 2) {
-        printDecodedBuffer(buffer);
-
-      } else if (iErrorCode == 3) {
-        if (iLineCode == 0) printf("NONE\n");
+      if (buffer[0] != '\n') {
+        // the last character of the buffer is null. \0
+        // so there is only iSizeBuffer -1 letters in the buffer.
+        int iErrorCode = decode(buffer);
+        if (iErrorCode == 1) {
+          iLineCode = 1;
+          printDecodedBuffer(buffer);
+        } else if (iErrorCode == 2) {
+          printDecodedBuffer(buffer);
+          printf("\n");
+          iLineCode = 0;
+        } else if (iErrorCode == 3) {
+          if (iLineCode == 0) printf("NONE");
+          printf("\n");
+          iLineCode = 0;
+        }
+      } else if (iLineCode != 0) {
+        printf("\n");
+        iLineCode = 0;
       }
-      printf("%s\n", buffer);
 
     }
     fclose(oFile);
@@ -90,6 +93,5 @@ void readFileByBuffer(char * filename, unsigned int iBufferSize) {
 int main(int argc, char * argv[]) {
   char * filename = argv[1];
   readFileByBuffer(filename, BUFFER_SIZE);
-  printf("\n");
   return 0;
 };
