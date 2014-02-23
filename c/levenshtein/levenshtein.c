@@ -95,8 +95,43 @@ int optimizeLevenshteinDistance(char * s, char * t) {
   return v1[iTLength];
 };
 
-int main() {
-  printf("%i\n", levenshteinDistance("kitten", "sitting"));
-  printf("%i\n", optimizeLevenshteinDistance("saturday", "sunday"));
+int main(int argc, char *argv[]) {
+  unsigned int MAX_INPUTS = 30;
+  FILE * oFile = fopen(argv[1], "r");
+  char * sEndOfInput = "END OF INPUT\n";
+  char line[256];
+  char * inputs[30];
+  unsigned int inputsNumber[30];
+
+  for (unsigned int i = 0; i < MAX_INPUTS; ++i) {
+    inputsNumber[i] = 0;
+  }
+  unsigned int numberOfInputs = 0;
+
+  while(fgets(line, 256, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
+    // Store the input.
+    inputs[numberOfInputs] = malloc(strlen(line) + 1);
+    strcpy(inputs[numberOfInputs], line);
+    // printf("%s", line);
+    ++numberOfInputs;
+  }
+
+  while(fgets(line, 256, oFile) != NULL) {
+    // For each words compute the levenshtein ditance for each input.
+    for (unsigned int k = 0; k < numberOfInputs; ++k) {
+      if (optimizeLevenshteinDistance(inputs[k], line) <= 1) {
+        inputsNumber[k]++;
+      }
+    }
+  }
+
+  for (unsigned int i = 0; i < numberOfInputs; i++) {
+    printf("%d\n", inputsNumber[i]);
+  }
+  for (unsigned int j = 0; j < numberOfInputs; j++) {
+    free(inputs[j]);
+  }
+
+  fclose(oFile);
   return 0;
 }
