@@ -1,7 +1,10 @@
-ab
-recursiveness
-elastic
-macrographies
+b
 END OF INPUT
-aa
-acs
+a
+aba
+abba
+ba
+bbac
+bar
+car
+cart

@@ -53,7 +53,7 @@ int levenshteinDistance(char * s, char * t) {
   return v1[iTLength];
 };
 
-int optimizeLevenshteinDistance(char * s, char * t) {
+int optimizeLevenshteinDistance(char * s, char * t, unsigned int max) {
 
   // Degenerate Cases.
   if (strcmp(s,t)==0) { return 0;}
@@ -90,25 +90,45 @@ int optimizeLevenshteinDistance(char * s, char * t) {
     // If on the line the current min is more than 2 then the distance can only
     // increase. So it allows to stop before the end of the word.
     // it's just a samll trick it doesn't decrease complexity.
-    if (iCurrentMin > 1) return 2;
+    if (iCurrentMin > max) return max + 1;
   }
   return v1[iTLength];
 };
 
+// Given a unsigned int you can see as a table of bites.
+// return the bigger index with only consecutive 1 from the 0.
+// ex: strong bit 10010111 weak bit
+// return 3.
+// becareful with little and big endian.
+unsigned int maxLevenshteinDistance(unsigned int x) {
+  unsigned int i;
+  for(i=0; i < (sizeof(int)*8)-1; ++i) {
+    if (!x&(1<<i))  break;
+  }
+
+  return i;
+};
+
 int main(int argc, char *argv[]) {
+  // According to the exercise description.
   unsigned int MAX_INPUTS = 30;
-  FILE * oFile = fopen(argv[1], "r");
   char * sEndOfInput = "END OF INPUT\n";
-  char line[256];
-  char * inputs[30];
-  unsigned int inputsNumber[30];
+
+  FILE * oFile = fopen(argv[1], "r");
+  char line[64];
+
+  char * inputs[MAX_INPUTS];
+  // Use to store the max number of differences (32 max ou 64)
+  unsigned int maxLevenshtein[MAX_INPUTS];
+  unsigned int inputsNumber[MAX_INPUTS];
 
   for (unsigned int i = 0; i < MAX_INPUTS; ++i) {
     inputsNumber[i] = 0;
+    maxLevenshtein[i] = 1;
   }
   unsigned int numberOfInputs = 0;
 
-  while(fgets(line, 256, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
+  while(fgets(line, 64, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
     // Store the input.
     inputs[numberOfInputs] = malloc(strlen(line) + 1);
     strcpy(inputs[numberOfInputs], line);
@@ -116,20 +136,41 @@ int main(int argc, char *argv[]) {
     ++numberOfInputs;
   }
 
-  while(fgets(line, 256, oFile) != NULL) {
+  while(fgets(line, 64, oFile) != NULL) {
     // For each words compute the levenshtein ditance for each input.
     for (unsigned int k = 0; k < numberOfInputs; ++k) {
-      if (optimizeLevenshteinDistance(inputs[k], line) <= 1) {
+      // we do not count the word.
+      unsigned int ld = levenshteinDistance(inputs[k], line);
+      unsigned int maxLev = 1 << ld;
+      maxLevenshtein[k] = maxLevenshtein[k] | maxLev;
+    }
+  }
+
+  for (unsigned int i = 0; i < numberOfInputs; ++i) {
+    maxLevenshtein[i] = maxLevenshteinDistance(maxLevenshtein[i]);
+  }
+
+  // 2nd pass
+  rewind(oFile);
+  while(fgets(line, 64, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
+    // pass inputs.
+  }
+  while(fgets(line, 64, oFile) != NULL) {
+    for (unsigned int k = 0; k < numberOfInputs; ++k) {
+      if (optimizeLevenshteinDistance(inputs[k], line, maxLevenshtein[k]) == 1) {
         inputsNumber[k]++;
       }
     }
   }
 
-  for (unsigned int i = 0; i < numberOfInputs; i++) {
+  // Print result.
+  for (unsigned int i = 0; i < numberOfInputs; ++i) {
     printf("%d\n", inputsNumber[i]);
   }
-  for (unsigned int j = 0; j < numberOfInputs; j++) {
-    free(inputs[j]);
+
+  // Free memory.
+  for (unsigned int i = 0; i < numberOfInputs; ++i) {
+    free(inputs[i]);
   }
 
   fclose(oFile);
