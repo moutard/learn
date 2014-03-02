@@ -53,14 +53,14 @@ int levenshteinDistance(char * s, char * t) {
   return v1[iTLength];
 };
 
-int optimizeLevenshteinDistance(char * s, char * t, unsigned int max) {
+unsigned int isValidLevenshteinDistance(char * s, char * t, unsigned int max) {
 
   // Degenerate Cases.
-  if (strcmp(s,t)==0) { return 0;}
+  if (strcmp(s,t)==0) { return 0;} // not valid we do not count the same word twice.
   unsigned int iSLength = strlen(s);
   unsigned int iTLength = strlen(t);
-  if (iSLength == 0) {return iTLength;}
-  if (iTLength == 0) {return iSLength;}
+  if (iSLength == 0) {return iTLength <= max;}
+  if (iTLength == 0) {return iSLength <= max;}
 
   // Create the two vectors (corresponds to the previous and current line of the matrix)
   unsigned int v0[iTLength + 1];
@@ -90,9 +90,9 @@ int optimizeLevenshteinDistance(char * s, char * t, unsigned int max) {
     // If on the line the current min is more than 2 then the distance can only
     // increase. So it allows to stop before the end of the word.
     // it's just a samll trick it doesn't decrease complexity.
-    if (iCurrentMin > max) return max + 1;
+    if (iCurrentMin > max) return 0;
   }
-  return v1[iTLength];
+  return v1[iTLength] <= max;
 };
 
 // Given a unsigned int you can see as a table of bites.
@@ -102,11 +102,10 @@ int optimizeLevenshteinDistance(char * s, char * t, unsigned int max) {
 // becareful with little and big endian.
 unsigned int maxLevenshteinDistance(unsigned int x) {
   unsigned int i;
-  for(i=0; i < (sizeof(int)*8)-1; ++i) {
-    if (!x&(1<<i))  break;
+  for(i = 1; i < (sizeof(int)*8)-1; ++i) {
+    if ( (x & (1<<i)) == 0)  break;
   }
-
-  return i;
+  return i + 1;
 };
 
 int main(int argc, char *argv[]) {
@@ -124,7 +123,7 @@ int main(int argc, char *argv[]) {
 
   for (unsigned int i = 0; i < MAX_INPUTS; ++i) {
     inputsNumber[i] = 0;
-    maxLevenshtein[i] = 1;
+    maxLevenshtein[i] = 1; // 1 = 2^0 (0 -> 1 distance lev max)
   }
   unsigned int numberOfInputs = 0;
 
@@ -141,13 +140,15 @@ int main(int argc, char *argv[]) {
     for (unsigned int k = 0; k < numberOfInputs; ++k) {
       // we do not count the word.
       unsigned int ld = levenshteinDistance(inputs[k], line);
-      unsigned int maxLev = 1 << ld;
+      unsigned int maxLev = (1 << (ld - 1)); // -1 to compensate the bit index starts at 0 for a 1 levenshtein distance.
       maxLevenshtein[k] = maxLevenshtein[k] | maxLev;
     }
   }
 
   for (unsigned int i = 0; i < numberOfInputs; ++i) {
+    printf("%s - %i\n", inputs[i], maxLevenshtein[i]);
     maxLevenshtein[i] = maxLevenshteinDistance(maxLevenshtein[i]);
+    printf("%s - %i\n", inputs[i], maxLevenshtein[i]);
   }
 
   // 2nd pass
@@ -157,7 +158,7 @@ int main(int argc, char *argv[]) {
   }
   while(fgets(line, 64, oFile) != NULL) {
     for (unsigned int k = 0; k < numberOfInputs; ++k) {
-      if (optimizeLevenshteinDistance(inputs[k], line, maxLevenshtein[k]) == 1) {
+      if (isValidLevenshteinDistance(inputs[k], line, maxLevenshtein[k])) {
         inputsNumber[k]++;
       }
     }
