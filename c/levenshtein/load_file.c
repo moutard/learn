@@ -56,58 +56,50 @@ int levenshteinDistance(char * s, char * t) {
 
 int main(int argc, char *argv[]) {
 
-  clock_t begin, end;
-  double time_spent;
-  begin = clock();
   // According to the exercise description.
   unsigned int MAX_INPUTS = 200;
+  unsigned int MAX_DICT = 300000;
   char * sEndOfInput = "END OF INPUT\n";
 
-  FILE * oFile = fopen(argv[1], "r");
   char line[64];
 
-  char * inputs[MAX_INPUTS];
-  char * dict[300000];
-  // Use to store the max number of differences (32 max ou 64)
-  unsigned int maxLevenshtein[MAX_INPUTS];
-  unsigned int inputsNumber[MAX_INPUTS];
+  char** inputs = malloc(MAX_INPUTS * sizeof(char *));
+  char** dict = malloc(MAX_DICT * sizeof(char*));
 
+  // Initialize empty array of pointers.
   for (unsigned int i = 0; i < MAX_INPUTS; ++i) {
-    inputsNumber[i] = 0;
-    maxLevenshtein[i] = 0; // 1 = 2^0 (0 -> 1 distance lev max)
+    inputs[i] = NULL;
   }
-  unsigned int numberOfInputs = 0;
+  for (unsigned int i = 0; i < MAX_DICT; ++i) {
+    dict[i] = NULL;
+  }
 
+  // Read file and fill arrays.
+  FILE * oFile = fopen(argv[1], "r");
+  unsigned int numberOfInputs = 0;
   while(fgets(line, 64, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
     // Store the input.
     inputs[numberOfInputs] = malloc(strlen(line) + 1);
     strcpy(inputs[numberOfInputs], line);
-    // printf("%s", line);
     ++numberOfInputs;
   }
 
   unsigned int numberOfWords = 0;
   while(fgets(line, 64, oFile) != NULL) {
-
-    inputs[numberOfInputs] = malloc(strlen(line) + 1);
-    strcpy(inputs[numberOfInputs], line);
+    dict[numberOfWords] = malloc(strlen(line) + 1);
+    strcpy(dict[numberOfWords], line);
     ++numberOfWords;
   }
+  fclose(oFile);
 
-  for (unsigned int i = 0; i < numberOfInputs; ++i) {
-    printf("%s - %i\n", inputs[i], maxLevenshtein[i]);
-  }
-
-  // Free memory.
+  // Free memory in arrays.
   for (unsigned int i = 0; i < numberOfInputs; ++i) {
     free(inputs[i]);
   }
+  free(inputs);
   for (unsigned int i = 0; i < numberOfWords; ++i) {
     free(dict[i]);
   }
-  fclose(oFile);
-  end = clock();
-  time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("%fs", time_spent);
+  free(dict);
   return 0;
 }
