@@ -61,7 +61,7 @@ unsigned int areFriends(char * s, char * t) {
   // Degenerate Cases.
   unsigned int iSLength = strlen(s);
   unsigned int iTLength = strlen(t);
-  if ((iSLength == iTLength) &&  (strcmp(s,t)==0)) {
+  if ((iSLength == iTLength) &&  s == t) {
     // not valid we do not count the same word twice.
     return 0;
   }
@@ -110,47 +110,56 @@ int isIn(char * word, char ** list, unsigned int listLength) {
 
 int main(int argc, char *argv[]) {
   // According to the exercise description.
-  unsigned int MAX_INPUTS = 30;
   char * sEndOfInput = "END OF INPUT\n";
 
-  FILE * oFile = fopen(argv[1], "r");
-  char line[64];
-
+  unsigned int MAX_INPUTS = 30;
   char * inputs[MAX_INPUTS];
-  char ** socialNetwork = malloc(sizeof(char *)*50000);
-  unsigned int iInputId = 0;
-  // Use to store the max number of differences (32 max ou 64)
-  unsigned int inputsSNLength[MAX_INPUTS];
 
-  for (unsigned int i = 0; i < MAX_INPUTS; ++i) {
-    inputsSNLength[i] = 0;
+  unsigned int MAX_SOCIAL = 5000;
+  char ** socialNetwork = malloc(sizeof(char *) * MAX_SOCIAL);
+
+  unsigned int MAX_DICT = 300000;
+  char** dict = malloc(MAX_DICT * sizeof(char*));
+
+  for (unsigned int i = 0; i < MAX_DICT; ++i) {
+    dict[i] = NULL;
   }
 
+
+  unsigned int iInputId = 0;
+
+  // Read file and fill arrays.
+  FILE * oFile = fopen(argv[1], "r");
+  char line[64];
+  // Read inputs
   unsigned int numberOfInputs = 0;
   while(fgets(line, 64, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
+    printf("%s", line);
     // Store the input.
     inputs[numberOfInputs] = malloc(strlen(line) + 1);
     strcpy(inputs[numberOfInputs], line);
     ++numberOfInputs;
   }
-  long iBegin = ftell(oFile);
+  // Read words of dict
+  unsigned int numberOfWords = 0;
+  while(fgets(line, 64, oFile) != NULL) {
+    dict[numberOfWords] = malloc(strlen(line) + 1);
+    strcpy(dict[numberOfWords], line);
+    ++numberOfWords;
+  }
+  fclose(oFile);
 
-
-
-  socialNetwork[0] = malloc(strlen(inputs[iInputId]) + 1);
-  strcpy(socialNetwork[0], inputs[iInputId]);
+  socialNetwork[0] = inputs[iInputId];
 
   unsigned int iSNLength = 1;
   unsigned int iSNLevel = 0;
   while(iSNLevel < iSNLength) {
     unsigned int iSNPrevious = iSNLength;
-    fseek(oFile, iBegin, SEEK_SET);
-    while(fgets(line, 64, oFile) != NULL) {
+    for (unsigned int iWord = 0; iWord < numberOfWords; ++iWord) {
       // For each words compute the levenshtein ditance for each input.
-      unsigned int ld = areFriends(socialNetwork[iSNLevel], line);
-      if (ld == 1 && !isIn(line, socialNetwork, iSNLength)) {
-        socialNetwork[iSNLength] = malloc(strlen(line) + 1);
-        strcpy(socialNetwork[iSNLength], line);
+      unsigned int ld = areFriends(socialNetwork[iSNLevel], dict[iWord]);
+      if (ld == 1 && !isIn(dict[iWord], socialNetwork, iSNLength)) {
+        socialNetwork[iSNLength] = dict[iWord];
         ++iSNLength;
       }
     }
@@ -163,14 +172,14 @@ int main(int argc, char *argv[]) {
   }
 
   printf("\n");
-  fclose(oFile);
 
+  for (unsigned int i = 0; i < numberOfWords; ++i) {
+    free(dict[i]);
+  }
+  free(dict);
   // Free memory.
   for (unsigned int i = 0; i < numberOfInputs; ++i) {
     free(inputs[i]);
-  }
-  for (unsigned int i = 0; i < iSNLength; ++i) {
-    free(socialNetwork[i]);
   }
   free(socialNetwork);
 
