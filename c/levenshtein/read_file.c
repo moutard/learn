@@ -3,6 +3,10 @@
 #include <string.h>
 #include <time.h>
 
+int lev(char * s1, char * s2) {
+  return 0;
+};
+
 unsigned int min(unsigned int a, unsigned int b, unsigned int c) {
   unsigned int min;
   if (a < b) {
@@ -18,7 +22,7 @@ unsigned int min(unsigned int a, unsigned int b, unsigned int c) {
   }
 };
 
-int levenshteinDistance(char * s, char * t) {
+int levenshtein(char * s, char * t) {
 
   // Degenerate Cases.
   if (strcmp(s,t)==0) { return 0;}
@@ -55,53 +59,21 @@ int levenshteinDistance(char * s, char * t) {
 };
 
 int main(int argc, char *argv[]) {
-
   clock_t begin, end;
   double time_spent;
   begin = clock();
-  // According to the exercise description.
-  unsigned int MAX_INPUTS = 200;
-  char * sEndOfInput = "END OF INPUT\n";
 
   FILE * oFile = fopen(argv[1], "r");
   char line[64];
+  long iCursor = 0;
+  char sTestWord[9] = "bonjour\n";
 
-  char * inputs[MAX_INPUTS];
-  // Use to store the max number of differences (32 max ou 64)
-  unsigned int maxLevenshtein[MAX_INPUTS];
-  unsigned int inputsNumber[MAX_INPUTS];
-
-  for (unsigned int i = 0; i < MAX_INPUTS; ++i) {
-    inputsNumber[i] = 0;
-    maxLevenshtein[i] = 0; // 1 = 2^0 (0 -> 1 distance lev max)
-  }
-  unsigned int numberOfInputs = 0;
-
-  while(fgets(line, 64, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
-    // Store the input.
-    inputs[numberOfInputs] = malloc(strlen(line) + 1);
-    strcpy(inputs[numberOfInputs], line);
-    // printf("%s", line);
-    ++numberOfInputs;
-  }
-
-  while(fgets(line, 64, oFile) != NULL) {
-    // For each words compute the levenshtein ditance for each input.
-    for (unsigned int k = 0; k < numberOfInputs; ++k) {
-      // we do not count the word.
-      unsigned int ld = levenshteinDistance(inputs[k], line);
-      if (ld < 2) maxLevenshtein[k]++;
-
+  while (iCursor < 30) {
+    rewind(oFile);
+    while(fgets(line, 64, oFile) != NULL) {
+      levenshtein(line, sTestWord);
     }
-  }
-
-  for (unsigned int i = 0; i < numberOfInputs; ++i) {
-    printf("%s - %i\n", inputs[i], maxLevenshtein[i]);
-  }
-
-  // Free memory.
-  for (unsigned int i = 0; i < numberOfInputs; ++i) {
-    free(inputs[i]);
+    ++iCursor;
   }
 
   fclose(oFile);

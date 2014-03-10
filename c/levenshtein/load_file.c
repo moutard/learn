@@ -3,6 +3,11 @@
 #include <string.h>
 #include <time.h>
 
+
+int lev(char * s, char * t) {
+  return 0;
+};
+
 unsigned int min(unsigned int a, unsigned int b, unsigned int c) {
   unsigned int min;
   if (a < b) {
@@ -18,7 +23,7 @@ unsigned int min(unsigned int a, unsigned int b, unsigned int c) {
   }
 };
 
-int levenshteinDistance(char * s, char * t) {
+int levenshtein(char * s, char * t) {
 
   // Degenerate Cases.
   if (strcmp(s,t)==0) { return 0;}
@@ -54,35 +59,24 @@ int levenshteinDistance(char * s, char * t) {
   return v1[iTLength];
 };
 
-int main(int argc, char *argv[]) {
 
-  // According to the exercise description.
-  unsigned int MAX_INPUTS = 200;
+int main(int argc, char *argv[]) {
+  clock_t begin, end;
+  double time_spent;
+  begin = clock();
+
   unsigned int MAX_DICT = 300000;
-  char * sEndOfInput = "END OF INPUT\n";
 
   char line[64];
-
-  char** inputs = malloc(MAX_INPUTS * sizeof(char *));
+  char sTestWord[9] = "bonjour\n";
   char** dict = malloc(MAX_DICT * sizeof(char*));
 
-  // Initialize empty array of pointers.
-  for (unsigned int i = 0; i < MAX_INPUTS; ++i) {
-    inputs[i] = NULL;
-  }
   for (unsigned int i = 0; i < MAX_DICT; ++i) {
     dict[i] = NULL;
   }
 
   // Read file and fill arrays.
   FILE * oFile = fopen(argv[1], "r");
-  unsigned int numberOfInputs = 0;
-  while(fgets(line, 64, oFile) != NULL && strcmp(line, sEndOfInput) != 0) {
-    // Store the input.
-    inputs[numberOfInputs] = malloc(strlen(line) + 1);
-    strcpy(inputs[numberOfInputs], line);
-    ++numberOfInputs;
-  }
 
   unsigned int numberOfWords = 0;
   while(fgets(line, 64, oFile) != NULL) {
@@ -92,14 +86,21 @@ int main(int argc, char *argv[]) {
   }
   fclose(oFile);
 
-  // Free memory in arrays.
-  for (unsigned int i = 0; i < numberOfInputs; ++i) {
-    free(inputs[i]);
+  int iCursor = 0;
+  while (iCursor < 30) {
+    for (unsigned int i = 0; i < numberOfWords; ++i) {
+      levenshtein(dict[i], sTestWord);
+    }
+    ++iCursor;
   }
-  free(inputs);
+
   for (unsigned int i = 0; i < numberOfWords; ++i) {
     free(dict[i]);
   }
   free(dict);
+  end = clock();
+  time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+  printf("%fs\n", time_spent);
+
   return 0;
 }
