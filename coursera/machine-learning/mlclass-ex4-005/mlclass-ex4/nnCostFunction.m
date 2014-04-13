@@ -23,7 +23,7 @@ Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):en
                  num_labels, (hidden_layer_size + 1));
 
 % Setup some useful variables
-m = size(X, 1)
+m = size(X, 1);
 
 % You need to return the following variables correctly
 J = 0;
@@ -49,17 +49,20 @@ end
 
 % add biais unit for each feature.
 % a_1 size (n + 1) * m (features * training set)
-a_1 = [ones(m, 1) X]';
+a_1 = X';
+a_biais_1 = [ones(1, m); a_1];
 
 % z_2 size hidden_units * m
-z_2 = Theta1 * a_1;
+z_2 = Theta1 * a_biais_1;
 
 % add biais unit for each feature.
 % a_2 size
-a_2 = [ones(1, m); sigmoid(z_2)];
+a_2 = sigmoid(z_2);
+a_biais_2 = [ones(1, m); a_2];
 
-z_3 = Theta2 * a_2;
+z_3 = Theta2 * a_biais_2;
 
+% no need a biais for the output layer.
 a_3 = sigmoid(z_3);
 
 h_theta = a_3;
@@ -81,6 +84,16 @@ J = (1/m) * trace( -Y * log(h_theta) - (1 - Y) * log(1 - h_theta)) ;
 %               over the training examples if you are implementing it for the
 %               first time.
 %
+for j=1:m
+  delta_3 = a_3(:,j) - Y(j,:)';
+  delta_2 = Theta2' * delta_3;
+  delta_2 = delta_2 .* a_biais_2(:,j) .* (1 - a_biais_2(:,j));
+  Theta1_grad = Theta1_grad + delta_2(2:end) * a_biais_1(:,j)';
+  Theta2_grad = Theta2_grad + delta_3 * a_biais_2(:,j)';
+end
+Theta1_grad = (1/m) * Theta1_grad;
+Theta2_grad = (1/m) * Theta2_grad;
+
 % Part 3: Implement regularization with the cost function and gradients.
 %
 %         Hint: You can implement this around the code for
