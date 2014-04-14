@@ -108,7 +108,8 @@ Theta1(:,1) = zeros(hidden_layer_size, 1);
 Theta2(:,1) = zeros(num_labels, 1);
 J = J + (lambda/(2*m)) * (sum(sum(Theta1 .^2)) + sum(sum(Theta2 .^2)));
 
-
+Theta1_grad = Theta1_grad + (lambda/m) * Theta1;
+Theta2_grad = Theta2_grad + (lambda/m) * Theta2;
 
 
 
