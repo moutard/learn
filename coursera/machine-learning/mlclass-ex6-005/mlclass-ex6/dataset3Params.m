@@ -31,13 +31,12 @@ for i = 1:8
   for j = 1:8
     C_curr = C_possible(i);
     sigma_curr = sigma_possible(j);
-    model= svmTrain(Xval, yval, C_curr, @(x1, x2) gaussianKernel(x1, x2, sigma_curr));
+    model = svmTrain(X, y, C_curr, @(x1, x2) gaussianKernel(x1, x2, sigma_curr));
     predictions = svmPredict(model, Xval);
     MEAN(i,j) = mean(double(predictions ~= yval));
   end
 end
 
-MEAN
 [min_values, a] = min(MEAN);
 [min_value, b] = min(min_values);
 
