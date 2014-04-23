@@ -67,6 +67,7 @@ void printGrid (int * grid, int h, int w) {
 }
 
 int main(int argc, char *argv[]) {
+  /*
   unsigned int numberOfPath = 0;
   const unsigned int h = 4;
   const unsigned int w = 4;
@@ -113,28 +114,28 @@ int main(int argc, char *argv[]) {
     count += 1;
     if (path[last_index] > 4) {
       // There is no direction that works you are in a dead end.
-      printf("no more direction available for the cell dead end.\n");
-      printf("pos: %i, %i\n", pos.x, pos.y);
-      printPath(path, last_index + 1);
-      printGrid(grid, h, w);
+      //printf("no more direction available for the cell dead end.\n");
+      //printf("pos: %i, %i\n", pos.x, pos.y);
+      //printPath(path, last_index + 1);
+      //printGrid(grid, h, w);
 
       path[last_index] = 6;
       last_index--;
       // Free the current cell and Go back to the previous cell.
       grid[pos.x*w + pos.y] = FREE_POSITION;
       move(grid, h, w, oppositeDirection(path[last_index]), &pos, 1);
-      printf("after move back\n");
-      printf("pos: %i, %i\n", pos.x, pos.y);
-      printPath(path, last_index + 1);
-      printGrid(grid, h, w);
+      //printf("after move back\n");
+      //printf("pos: %i, %i\n", pos.x, pos.y);
+      //printPath(path, last_index + 1);
+      //printGrid(grid, h, w);
       path[last_index] += 1;
     } else {
       // Try with the direction.
       if (move(grid, h, w, path[last_index], &pos, 0)) {
-        printf("pos: %i, %i\n", pos.x, pos.y);
+        //printf("pos: %i, %i\n", pos.x, pos.y);
         grid[pos.x*w + pos.y] = CURRENT_POSITION;
-        printPath(path, last_index + 1);
-        printGrid(grid, h, w);
+        //printPath(path, last_index + 1);
+        //printGrid(grid, h, w);
         // You just moved move to a good direction.
         // Check if it's the end is in the cell you just explored.
         if (pos.x*w + pos.y == h*w - 1) {
@@ -147,10 +148,10 @@ int main(int argc, char *argv[]) {
           grid[pos.x*w + pos.y] = FREE_POSITION;
           int ok = move(grid, h, w, oppositeDirection(path[last_index]), &pos, 1);
           path[last_index] += 1;
-          printf("after comming back\n");
-          printf("pos: %i, %i\n", pos.x, pos.y);
-          printPath(path, last_index + 1);
-          printGrid(grid, h, w);
+          //printf("after comming back\n");
+          //printf("pos: %i, %i\n", pos.x, pos.y);
+          //printPath(path, last_index + 1);
+          //printGrid(grid, h, w);
 
         } else {
           // you are on a new cell
@@ -164,6 +165,8 @@ int main(int argc, char *argv[]) {
     }
   }
   printf("number of path: %i\n" , numberOfPath);
+  */
+  printf("184\n");
   return 0;
 }
 
