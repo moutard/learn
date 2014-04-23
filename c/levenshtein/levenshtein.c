@@ -111,14 +111,18 @@ int isIn(char * word, char ** list, unsigned int listLength) {
 int main(int argc, char *argv[]) {
   // According to the exercise description.
   unsigned int MAX_INPUTS = 30;
+  unsigned int MAX_WORDS_LIST = 10000;
   char * sEndOfInput = "END OF INPUT\n";
 
+  // The first argument is the path of the file that contains the inputs list and
+  // the dictionary.
   FILE * oFile = fopen(argv[1], "r");
   char line[64];
 
+  // All the words (you want to compute their social network)
   char * inputs[MAX_INPUTS];
-  char ** socialNetwork = malloc(sizeof(char *)*50000);
-  unsigned int iInputId = 0;
+  // The max size of the social network is the list itself in the worst case.
+  char ** socialNetwork = malloc(sizeof(char *) * MAX_WORDS_LIST);
   // Use to store the max number of differences (32 max ou 64)
   unsigned int inputsSNLength[MAX_INPUTS];
 
@@ -136,41 +140,38 @@ int main(int argc, char *argv[]) {
   long iBegin = ftell(oFile);
 
 
+  for (unsigned int k = 0; k < numberOfInputs; ++k) {
+    socialNetwork[0] = malloc(strlen(inputs[k]) + 1);
+    strcpy(socialNetwork[0], inputs[k]);
 
-  socialNetwork[0] = malloc(strlen(inputs[iInputId]) + 1);
-  strcpy(socialNetwork[0], inputs[iInputId]);
-
-  unsigned int iSNLength = 1;
-  unsigned int iSNLevel = 0;
-  while(iSNLevel < iSNLength) {
-    unsigned int iSNPrevious = iSNLength;
-    fseek(oFile, iBegin, SEEK_SET);
-    while(fgets(line, 64, oFile) != NULL) {
-      // For each words compute the levenshtein ditance for each input.
-      unsigned int ld = areFriends(socialNetwork[iSNLevel], line);
-      if (ld == 1 && !isIn(line, socialNetwork, iSNLength)) {
-        socialNetwork[iSNLength] = malloc(strlen(line) + 1);
-        strcpy(socialNetwork[iSNLength], line);
-        ++iSNLength;
+    unsigned int iSNLength = 1;
+    unsigned int iSNLevel = 0;
+    while(iSNLevel < iSNLength) {
+      unsigned int iSNPrevious = iSNLength;
+      fseek(oFile, iBegin, SEEK_SET);
+      while(fgets(line, 64, oFile) != NULL) {
+        // For each words compute the levenshtein ditance for each input.
+        unsigned int ld = areFriends(socialNetwork[iSNLevel], line);
+        if (ld == 1 && !isIn(line, socialNetwork, iSNLength)) {
+          socialNetwork[iSNLength] = malloc(strlen(line) + 1);
+          strcpy(socialNetwork[iSNLength], line);
+          ++iSNLength;
+        }
       }
+      ++iSNLevel;
     }
-    for (unsigned int i = iSNPrevious; i < iSNLength; ++i) {
-      printf("%s ", socialNetwork[i]);
+
+    printf("%i\n", iSNLength);
+
+    for (unsigned int i = 0; i < iSNLength; ++i) {
+      free(socialNetwork[i]);
     }
-    printf("------ %s -------- (%i / %i) \n",
-        socialNetwork[iSNLevel], iSNLevel, iSNLength);
-    ++iSNLevel;
   }
 
-  printf("\n");
   fclose(oFile);
-
   // Free memory.
   for (unsigned int i = 0; i < numberOfInputs; ++i) {
     free(inputs[i]);
-  }
-  for (unsigned int i = 0; i < iSNLength; ++i) {
-    free(socialNetwork[i]);
   }
   free(socialNetwork);
 
