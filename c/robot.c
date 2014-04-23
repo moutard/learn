@@ -50,5 +50,5 @@ int main(int argc, char *argv[]) {
    *    AN: here the grid is 4
    *    (2(4-1) (4-1)) = (6 3) = 70
    */
-  printf("70\n");
+  printf("70");
 }
