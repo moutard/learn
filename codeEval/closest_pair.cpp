@@ -7,9 +7,11 @@
 #include <math.h>
 #include <algorithm>
 
+
 class Point {
   public:
     Point(unsigned int x, unsigned int y);
+    std::ostream& print(std::ostream& os) const;
   private:
     friend float distance(const Point& p1, const Point& p2);
     friend bool predicateX(const Point & p1, const Point & p2);
@@ -23,6 +25,15 @@ bool predicateY(const Point & p1, const Point & p2) { return (p1._y < p2._y);}
 
 
 Point::Point(unsigned int x, unsigned int y) : _x(x), _y(y) {}
+
+std::ostream& Point::print(std::ostream& os) const {
+  os << "P { x: " << _x << " y: " << _y << "}";
+  return os;
+}
+
+std::ostream& operator<<(std::ostream& os, const Point & p) {
+  return p.print(os);
+}
 
 Point pointFactory(std::string & line) {
   std::string x, y;
