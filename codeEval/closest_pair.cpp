@@ -6,12 +6,14 @@
 #include <vector>
 #include <math.h>
 #include <algorithm>
-
-
+#include <cfloat>
+#include <iomanip>
 class Point {
   public:
     Point(unsigned int x, unsigned int y);
     std::ostream& print(std::ostream& os) const;
+    unsigned int x() {return _x;};
+    unsigned int y() {return _y;};
   private:
     friend float distance(const Point& p1, const Point& p2);
     friend bool predicateX(const Point & p1, const Point & p2);
@@ -48,26 +50,21 @@ float distance(const Point& p1, const Point& p2) {
     + (p1._y - p2._y)*(p1._y - p2._y) ;
 }
 
-float minDistanceSquare (std::vector<Point> & points) {
-  if (points.size() < 2) {
-    return 0;
+float minDistanceSquare (std::vector<Point> & points, unsigned int start, unsigned int end) {
+  if (end == start) {
+    // Should never happened.
+    return FLT_MAX;
   }
-  std::vector<Point>::iterator it = points.begin();
-  std::vector<Point>::iterator it2 = points.begin();
-  it2++;
-
-  float minDistance = distance(*it, *it2);
-  for (it = points.begin(); it != points.end(); ++it) {
-    for (it2 = points.begin(); it2 != points.end(); ++it2) {
-      if (it != it2) {
-        float currentDistance = distance(*it, *it2);
-        if (currentDistance < minDistance) {
-          minDistance = currentDistance;
-        }
+  float minDistance = distance(points[start], points[start+1]);
+  for (unsigned int i = start; i < end; ++i) {
+    for (unsigned int j = i+1; j < end; ++j) {
+      float currentDistance = distance(points[i], points[j]);
+      if (currentDistance < minDistance) {
+        minDistance = currentDistance;
       }
     }
   }
-  return sqrt(minDistance);
+  return minDistance;
 }
 
 void median(std::vector<Point> &v, unsigned int n,  bool x = true) {
@@ -78,19 +75,43 @@ void median(std::vector<Point> &v, unsigned int n,  bool x = true) {
   }
 }
 
+float minBorderDistance(std::vector<Point> & points, float delta) {
+  float minDistance = delta;
+  std::sort(points.begin(), points.end(), predicateY);
+  // Only perform 6 computation macimum.
+  for (unsigned int i = 0; i < points.size(); ++i) {
+    for (unsigned int j = i+1; j < points.size()
+        && points[j].y() - points[i].y() < minDistance; ++j) {
+       if (distance(points[i], points[j])) {
+        minDistance = distance(points[i], points[j]);
+      }
+    }
+  }
+  return minDistance;
+}
+
 float minDistance (std::vector<Point> & points, unsigned int start, unsigned int end) {
   float result;
-  if (end - start <= 10) {
-    result = minDistanceSquare(points);
-    std::cout << "Leaf min Distance:" << result << std::endl;
+
+  if (end - start <= 4) {
+    result = minDistanceSquare(points, start, end);
   } else {
-    unsigned int medianIndex = (end-start) /2;
+    unsigned int medianIndex = (end-start)/2;
     median(points, medianIndex);
-    result = std::min(
-        minDistance(points, start, medianIndex),
-        minDistance(points, medianIndex+1, end));
+    float delta = std::min(
+        minDistance(points, start, start + medianIndex),
+        minDistance(points, start + medianIndex + 1, end));
+    // compute border minDistance
+    result = minBorderDistance(points, delta);
   }
-  return result;
+  return sqrt(result);
+}
+void formatResult(float f) {
+  if (f > 10000) {
+    std::cout << "INFINITY" << std::endl;
+  } else {
+    std::cout << std::fixed << std::setprecision(4) << f << std::endl;
+  }
 }
 
 int main(int argc, char * argv[]) {
@@ -101,11 +122,19 @@ int main(int argc, char * argv[]) {
   if (oFile.is_open()) {
     std::string line;
     while(getline(oFile, line)) {
-      sky.push_back(pointFactory(line));
+      unsigned int K = atoi(line.c_str());
+      if (K > 0) {
+        for (unsigned int i = 0; i < K; ++i) {
+          getline(oFile, line);
+          sky.push_back(pointFactory(line));
+        }
+        float m = minDistance(sky, 0, sky.size() - 1);
+        formatResult(m);
+        sky.clear();
+        getline(oFile, line);
+      }
     }
     oFile.close();
-
   }
-  std::cout<< minDistance(sky, 0, sky.size() - 1) << std::endl;
   return 0;
 }
