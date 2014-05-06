@@ -11,6 +11,11 @@ X = reshape(params(1:num_movies*num_features), num_movies, num_features);
 Theta = reshape(params(num_movies*num_features+1:end), ...
                 num_users, num_features);
 
+% num_users 4
+% num_movies 5
+% num_features 3
+%'X' size(X) (n_movies * n_features) 5*3
+% 'Theta' size(Theta) (n_users * n_features)
 % You need to return the following values correctly
 J = 0;
 X_grad = zeros(size(X));
@@ -43,7 +48,12 @@ Theta_grad = zeros(size(Theta));
 A = (X * Theta' - Y).^2;
 J = (1/2) * sum(sum(A.*R));
 
+A = (X * Theta' - Y); % n_movies * n_users
+A = A .* R; % n_movies * n_users
+X_grad = A * Theta; % Theta is n_movies * n_features
+%Regularisation
 
+Theta_grad = A' * X;
 
 
 
