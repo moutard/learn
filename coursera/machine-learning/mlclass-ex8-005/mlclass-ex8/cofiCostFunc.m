@@ -46,7 +46,7 @@ Theta_grad = zeros(size(Theta));
 
 
 A = (X * Theta' - Y).^2;
-J = (1/2) * sum(sum(A.*R));
+J = (1/2) * sum(sum(A.*R)) + (lambda/2) * ( sum(sum(Theta.^2)) + sum(sum(X.^2)) );
 
 A = (X * Theta' - Y); % n_movies * n_users
 A = A .* R; % n_movies * n_users
@@ -54,11 +54,6 @@ X_grad = A * Theta; % Theta is n_movies * n_features
 %Regularisation
 
 Theta_grad = A' * X;
-
-
-
-
-
 
 
 
