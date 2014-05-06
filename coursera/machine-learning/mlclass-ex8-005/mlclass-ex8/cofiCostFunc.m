@@ -52,8 +52,10 @@ A = (X * Theta' - Y); % n_movies * n_users
 A = A .* R; % n_movies * n_users
 X_grad = A * Theta; % Theta is n_movies * n_features
 %Regularisation
+X_grad = X_grad + (lambda) * X;
 
 Theta_grad = A' * X;
+Theta_grad = Theta_grad + (lambda) * Theta;
 
 
 
