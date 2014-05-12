@@ -46,8 +46,8 @@ Point pointFactory(std::string & line) {
 }
 
 float distance(const Point& p1, const Point& p2) {
-  return (p1._x - p2._x)*(p1._x - p2._x)
-    + (p1._y - p2._y)*(p1._y - p2._y) ;
+  return sqrt((p1._x - p2._x)*(p1._x - p2._x)
+    + (p1._y - p2._y)*(p1._y - p2._y));
 }
 
 float minDistanceSquare (std::vector<Point> & points, unsigned int start, unsigned int end) {
@@ -56,8 +56,8 @@ float minDistanceSquare (std::vector<Point> & points, unsigned int start, unsign
     return FLT_MAX;
   }
   float minDistance = distance(points[start], points[start+1]);
-  for (unsigned int i = start; i < end; ++i) {
-    for (unsigned int j = i+1; j < end; ++j) {
+  for (unsigned int i = start; i <= end; ++i) {
+    for (unsigned int j = i+1; j <= end; ++j) {
       float currentDistance = distance(points[i], points[j]);
       if (currentDistance < minDistance) {
         minDistance = currentDistance;
@@ -75,13 +75,16 @@ void median(std::vector<Point> &v, unsigned int n,  bool x = true) {
   }
 }
 
-float minBorderDistance(std::vector<Point> & points, float delta) {
+/**
+ * points must be sorted according to predicateY.
+ */
+float minBorderDistance(std::vector<Point> & points, float delta, unsigned int medianPointX) {
   float minDistance = delta;
-  std::sort(points.begin(), points.end(), predicateY);
-  // Only perform 6 computation macimum.
+  // Only perform 6 computation maximum.
   for (unsigned int i = 0; i < points.size(); ++i) {
     for (unsigned int j = i+1; j < points.size()
-        && points[j].y() - points[i].y() < minDistance; ++j) {
+        && abs(points[j].x() - medianPointX) < delta
+        && abs(points[j].y() - points[i].y()) < minDistance; ++j) {
        if (distance(points[i], points[j])) {
         minDistance = distance(points[i], points[j]);
       }
@@ -90,7 +93,19 @@ float minBorderDistance(std::vector<Point> & points, float delta) {
   return minDistance;
 }
 
-float minDistance (std::vector<Point> & points, unsigned int start, unsigned int end) {
+float minDistanceStrip(std::vector<Point> & strip, float delta) {
+  float minDistance = delta;
+  std::sort(strip.begin(), strip.end(), predicateY);
+  for (unsigned int i = 0; i < strip.size(); ++i) {
+     for (unsigned int j = i+1; j < strip.size() && (strip[j].y() - strip[i].y()) < minDistance; ++j) {
+        if (distance(strip[i], strip[j]) < minDistance) {
+            minDistance = distance(strip[i], strip[j]);
+        }
+     }
+  }
+}
+
+float minDistance (std::vector<Point> & points, unsigned int start, unsigned int end, std::vector<Point> & pointsSortedY) {
   float result;
 
   if (end - start <= 4) {
@@ -99,15 +114,22 @@ float minDistance (std::vector<Point> & points, unsigned int start, unsigned int
     unsigned int medianIndex = (end-start)/2;
     median(points, medianIndex);
     float delta = std::min(
-        minDistance(points, start, start + medianIndex),
-        minDistance(points, start + medianIndex + 1, end));
+        minDistance(points, start, start + medianIndex, pointsSortedY),
+        minDistance(points, start + medianIndex, end, pointsSortedY));
     // compute border minDistance
-    result = minBorderDistance(points, delta);
+    std::vector<Point> strip;
+    for (unsigned int i = start; i <= end; ++i) {
+      if (abs(points[i].x() - points[medianIndex].x()) < delta) {
+        strip.push_back(points[i]);
+      }
+    }
+    result = minDistanceStrip(strip, delta);
+    //result = minBorderDistance(pointsSortedY, delta, points[medianIndex].x());
   }
-  return sqrt(result);
+  return result;
 }
 void formatResult(float f) {
-  if (f > 10000) {
+  if (false) {
     std::cout << "INFINITY" << std::endl;
   } else {
     std::cout << std::fixed << std::setprecision(4) << f << std::endl;
@@ -116,24 +138,18 @@ void formatResult(float f) {
 
 int main(int argc, char * argv[]) {
 
-  std::vector<Point> sky;
+  std::vector<Point> points;
   std::ifstream oFile;
   oFile.open(argv[1], std::ios::in);
   if (oFile.is_open()) {
     std::string line;
     while(getline(oFile, line)) {
-      unsigned int K = atoi(line.c_str());
-      if (K > 0) {
-        for (unsigned int i = 0; i < K; ++i) {
-          getline(oFile, line);
-          sky.push_back(pointFactory(line));
-        }
-        float m = minDistance(sky, 0, sky.size() - 1);
-        formatResult(m);
-        sky.clear();
-        getline(oFile, line);
-      }
+      points.push_back(pointFactory(line));
     }
+    std::vector<Point> pointsSortedY = points;
+    std::sort(pointsSortedY.begin(), pointsSortedY.end(), predicateY);
+    float m = minDistance(points, 0, points.size() - 1, pointsSortedY);
+    formatResult(m);
     oFile.close();
   }
   return 0;
