@@ -1,30 +1,46 @@
 cmake_minimum_required (VERSION 2.6)
 project (Raytracer)
 
-# Locate GTest
+# === External libraries ===
+
+# == GTest
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-FIND_PACKAGE(Qt4 COMPONENTS QtCore QtXml QtOpenGL QtGui REQUIRED)
+# == Qt4
+find_package(Qt4 REQUIRED)
+# Components QtCore and QtGui are inserted by default.
+# if you need another component you have to activate it, like this:
 set(QT_USE_QTXML 1)
 set(QT_USE_QTOPENGL 1)
+include_directories(${QT_INCLUDE_DIRS})
 
-# Locate libQGLViewer
-# as libQGLViewer is an external library that CMake doesn't yet have modules for
-# we need to create a module by ourselves.
-# We created a folder called cmake/Modules in our source directory root.
-# we add this file in it https://raw.github.com/RainerKuemmerle/g2o/master/cmake_modules/FindQGLViewer.cmake
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+# Qt need a bit more work.
+# include is used to include a cmale module (or macro, here QT4_WRAPP_CPP)
+include(${QT_USE_FILE})
+# add preprocessors variables used by Qt (like QT_VERSION)
+add_definitions(${QT_DEFINITIONS})
+# learn more about qt and cmake at https://qt-project.org/quarterly/view/using_cmake_to_build_qt_projects
 
-# See more on how add Qt with cmake here:
-# http://qt-project.org/quarterly/view/using_cmake_to_build_qt_projects
-# libqglviewer se Qt so see how we included it in findQGLViewer.cmake
-
-find_package(QGLViewer REQUIRED)
+# == GLut
+# I think it's optional (FindGLU and FindGLUT are available by default)
 find_package(GLUT REQUIRED)
+include_directories(${GLUT_INCLUDE_DIRS})
+
+# == QGLViewer
+# as QGLViewer is an external library that CMake doesn't support by default.
+# Indeed there is no module for it so we need to create the module by ourselves.
+# - create a folder called cmake/Modules in our source directory root.
+# - add a FindQGLViewer.cmake
+#    I found a version here https://raw.github.com/RainerKuemmerle/g2o/master/cmake_modules/FindQGLViewer.cmake
+# - tell cmake where to find this file
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+# after that you can use find_package to locate your library.
+find_package(QGLViewer REQUIRED)
 #include_directories(${QGLViewer_INCLUDE_DIRS})
 
-set( RAYTRACER_SOURCES
+# === Project Sources ===
+set( SOURCES
   GLViewer.cpp
   QTUtils.cpp
   Vertex.cpp
@@ -40,7 +56,7 @@ set( RAYTRACER_SOURCES
   Window.cpp
   Main.cpp
   )
-set( RAYTRACER_HEADERS
+set( HEADERS
   GLViewer.h
   QTUtils.h
   Vertex.h
@@ -57,18 +73,20 @@ set( RAYTRACER_HEADERS
   Vec3D.h
 
   )
-# Assure that all qt are correctly imported.
-QT4_WRAP_CPP(RAYTRACER_HEADERS_MOC ${RAYTRACER_HEADERS})
-# Create executable called simpleViewer
+
+# preprocess all Qt files
+QT4_WRAP_CPP(HEADERS_MOC ${HEADERS})
+
+# Create executable called raytracer, that use the modified source.
 add_executable(
   raytracer
-  ${RAYTRACER_SOURCES}
-  ${RAYTRACER_HEADERS_MOC}
+  ${SOURCES}
+  ${HEADERS_MOC}
   )
 
-# Add target link library
-target_link_libraries(raytracer QGLViewer GLU GL ${QT_LIBRARIES} ${GTEST_LIBRARIES} pthread)
+# link the executable you just created with all the external libraries
+# pthread is required by GTest
+target_link_libraries(raytracer GL ${GLUT_LIBRARIES} ${QGLVIEWER_LIBRARY} ${QT_LIBRARIES} ${GTEST_LIBRARIES} pthread)
 
 # you can add a specific executable for test.
-# Use a variables for header and footers.
 
