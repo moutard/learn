@@ -191,9 +191,12 @@ void Mesh::renderGL (bool flat) const {
  */
 void Mesh::loadOFF (const std::string & filename) {
     clear ();
+    cout << "loadOFF" << endl;
       ifstream input (filename.c_str ());
+      cout << "input file : " << filename << endl;
       if (!input)
           throw Exception ("Failing opening the file.");
+      cout << "File loaded" << endl;
       string magic_word;
       input >> magic_word;
       if (magic_word != "OFF")

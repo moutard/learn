@@ -89,4 +89,6 @@ add_executable(
 target_link_libraries(raytracer GL ${GLUT_LIBRARIES} ${QGLVIEWER_LIBRARY} ${QT_LIBRARIES} ${GTEST_LIBRARIES} pthread)
 
 # you can add a specific executable for test.
+# Data files (contains model) needs to copy them in the
+file(COPY models DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
 
