@@ -3,11 +3,21 @@ INCLUDEPATH += ../shared
 
 HEADERS       = glwidget.h \
                 window.h \
-                qtlogo.h
+                qtlogo.h \
+    vec3d.h \
+    vertex.h \
+    triangle.h \
+    mesh.h \
+    edge.h \
+    meshfactory.h
 SOURCES       = glwidget.cpp \
                 main.cpp \
                 window.cpp \
-                qtlogo.cpp
+                qtlogo.cpp \
+    vertex.cpp \
+    triangle.cpp \
+    mesh.cpp \
+    meshfactory.cpp
 QT           += opengl
 
 # install
