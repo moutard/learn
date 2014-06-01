@@ -7,7 +7,7 @@
 #include "vertex.h"
 #include "triangle.h"
 #include "edge.h"
-#include "hgexception.h"
+#include "../utils/hgexception.h"
 
 class Mesh {
 public:
@@ -29,8 +29,8 @@ public:
     const std::vector<Vertex> & getVertices () const { return vertices; }
     std::vector<Triangle> & getTriangles () { return triangles; }
     const std::vector<Triangle> & getTriangles () const { return triangles; }
-    void pushVertex (const Vertex & vertex);
-    void pushTriangle (const Triangle & triangle);
+    void pushVertex (Vertex vertex);
+    void pushTriangle (Triangle triangle);
 
     void clear ();
     void clearGeometry ();
@@ -44,7 +44,7 @@ public:
     void markBorderEdges (EdgeMapIndex & edgeMap);
 
     void renderGL (bool flat) const;
-
+    void draw () const;
     void loadOFF (const std::string & filename);
 
 private:

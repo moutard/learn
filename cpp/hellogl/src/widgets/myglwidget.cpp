@@ -4,11 +4,18 @@
 #include <QWidget>
 #include <QtOpenGL>
 
+#include "../core/mesh.h"
+#include "../meshfactory.h"
+
 #include "myglwidget.h"
 
-MyGLWidget::MyGLWidget(Mesh & _mesh, QWidget *parent)
-    : QGLWidget(QGLFormat(QGL::SampleBuffers), parent) , mesh(_mesh)
+
+MyGLWidget::MyGLWidget(QWidget *parent)
+    : QGLWidget(QGLFormat(QGL::SampleBuffers), parent)
 {
+    mesh = new Mesh();
+    MeshFactory f;
+    f.fromFile("../models/ram_HD.off", mesh);
     xRot = 0;
     yRot = 0;
     zRot = 0;
@@ -16,6 +23,7 @@ MyGLWidget::MyGLWidget(Mesh & _mesh, QWidget *parent)
 
 MyGLWidget::~MyGLWidget()
 {
+    delete mesh;
 }
 
 QSize MyGLWidget::minimumSizeHint() const
@@ -130,36 +138,5 @@ void MyGLWidget::mouseMoveEvent(QMouseEvent *event)
 void MyGLWidget::draw()
 {
     qglColor(Qt::red);
-    glBegin(GL_QUADS);
-        glNormal3f(0,0,-1);
-        glVertex3f(-1,-1,0);
-        glVertex3f(-1,1,0);
-        glVertex3f(1,1,0);
-        glVertex3f(1,-1,0);
-
-    glEnd();
-    glBegin(GL_TRIANGLES);
-        glNormal3f(0,-1,0.707);
-        glVertex3f(-1,-1,0);
-        glVertex3f(1,-1,0);
-        glVertex3f(0,0,1.2);
-    glEnd();
-    glBegin(GL_TRIANGLES);
-        glNormal3f(1,0, 0.707);
-        glVertex3f(1,-1,0);
-        glVertex3f(1,1,0);
-        glVertex3f(0,0,1.2);
-    glEnd();
-    glBegin(GL_TRIANGLES);
-        glNormal3f(0,1,0.707);
-        glVertex3f(1,1,0);
-        glVertex3f(-1,1,0);
-        glVertex3f(0,0,1.2);
-    glEnd();
-    glBegin(GL_TRIANGLES);
-        glNormal3f(-1,0,0.707);
-        glVertex3f(-1,1,0);
-        glVertex3f(-1,-1,0);
-        glVertex3f(0,0,1.2);
-    glEnd();
+    mesh->renderGL(true);
 }

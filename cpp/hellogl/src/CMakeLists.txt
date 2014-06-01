@@ -42,41 +42,38 @@ include_directories(${OPENGL_INCLUDE_DIRS})
 # === Project Sources ===
 
 set (HEADERS
-  hgexception.h
-  vec3d.h
-  edge.h
-  glwidget.h
-  hglwidget.h
-  qdessingl.h
-  myglwidget.h
-  mesh.h
+  core/vec3d.h
+  core/edge.h
+  core/mesh.h
+  core/material.h
+  core/bounding_box.h
+  core/object3d.h
+  core/light.h
+  core/scene.h
+  core/triangle.h
+  core/vertex.h
+  utils/hgexception.h
+  widgets/myglwidget.h
   meshfactory.h
   qtlogo.h
-  triangle.h
-  vertex.h
   window.h
 )
 
 set (SOURCES
-  hgexception.cpp
-  glwidget.cpp
-  hglwidget.cpp
-  qdessingl.cpp
-  myglwidget.cpp
-  mesh.cpp
+  core/mesh.cpp
+  core/material.cpp
+  core/bounding_box.cpp
+  core/object3d.cpp
+  core/light.cpp
+  core/scene.cpp
+  core/triangle.cpp
+  core/vertex.cpp
+  utils/hgexception.cpp
+  widgets/myglwidget.cpp
   meshfactory.cpp
   qtlogo.cpp
-  triangle.cpp
-  vertex.cpp
   window.cpp
 )
-# it's consdidered as a bad practice
-#file(GLOB SOURCES
-#    "*.cpp"
-#  )
-#file(GLOB HEADERS
-#    "*.h"
-#  )
 
 # preprocess all Qt files
 QT4_WRAP_CPP(HEADERS_MOC ${HEADERS})

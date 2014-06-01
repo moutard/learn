@@ -40,21 +40,19 @@
 
 #include <QtGui>
 
-#include "myglwidget.h"
-#include "window.h"
-#include "mesh.h"
+#include "core/mesh.h"
+#include "widgets/myglwidget.h"
 #include "meshfactory.h"
+#include "window.h"
+
 #include <iostream>
 using namespace std;
 //! [0]
 Window::Window()
 {
-    Mesh ram;
-    MeshFactory f;
-    f.fromFile("../models/ram.off", ram);
-    glWidget = new MyGLWidget(ram);
-    cout << "1" << endl;
 
+    cout << "1" << endl;
+    glWidget = new MyGLWidget();
     xSlider = createSlider();
     ySlider = createSlider();
     zSlider = createSlider();

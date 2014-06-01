@@ -44,16 +44,23 @@ include_directories (${hellogl_SOURCE_DIR}/src)
 
 file(GLOB SOURCES
     ${hellogl_SOURCE_DIR}/src/*.cpp
+    ${hellogl_SOURCE_DIR}/src/core/*.cpp
+    ${hellogl_SOURCE_DIR}/src/utils/*.cpp
+    ${hellogl_SOURCE_DIR}/src/widgets/*.cpp
   )
 file(GLOB HEADERS
     ${hellogl_SOURCE_DIR}/src/*.h
+    ${hellogl_SOURCE_DIR}/src/core/*.h
+    ${hellogl_SOURCE_DIR}/src/utils/*.h
+    ${hellogl_SOURCE_DIR}/src/widgets/*.h
   )
 
 # Create a List given a variable.
 set(SOURCES_WITHOUT_MAIN ${SOURCES})
+message("${SOURCES}")
 # Remove the main.cpp to only launch the tests.
 list(REMOVE_ITEM SOURCES_WITHOUT_MAIN ${hellogl_SOURCE_DIR}/src/main.cpp)
-#message("${SOURCES_WITHOUT_MAIN}")
+
 # preprocess all Qt files
 QT4_WRAP_CPP(HEADERS_MOC ${HEADERS})
 

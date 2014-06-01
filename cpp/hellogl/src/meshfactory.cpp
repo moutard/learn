@@ -5,7 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "hgexception.h"
+#include "utils/hgexception.h"
 
 using namespace std;
 
@@ -22,7 +22,7 @@ string MeshFactory::findExtension(const string & filename) {
     return extension;
 }
 
-void MeshFactory::fromFile(const string & filename, Mesh & mesh) {
+void MeshFactory::fromFile(const string & filename, Mesh * mesh) {
     string extension  = findExtension(filename);
     if (extension.compare("off") == 0) {
         cout << "Valid file. off extension detected." << endl;
@@ -44,7 +44,7 @@ void MeshFactory::fromFile(const string & filename, Mesh & mesh) {
  *  the vertices : x y z
  *  the polygones: polygone size + index to the corresponding vertices
  */
-void MeshFactory::fromOffFile(const string & filename, Mesh & mesh) {
+void MeshFactory::fromOffFile(const string & filename, Mesh * mesh) {
 
     ifstream input (filename.c_str ());
     if (!input.is_open()) {
@@ -62,13 +62,13 @@ void MeshFactory::fromOffFile(const string & filename, Mesh & mesh) {
     unsigned int numOfVertices, numOfTriangles, numUnused;
     input >> numOfVertices >> numOfTriangles >> numUnused;
 
-    mesh.reserve(numOfVertices, numOfTriangles);
+    mesh->reserve(numOfVertices, numOfTriangles);
 
     // Get all the Vertices.
     for (unsigned int i = 0; i < numOfVertices; ++i) {
         Vec3Df pos;
         input >> pos;
-        mesh.pushVertex(Vertex (pos, Vec3Df (1.0, 0.0, 0.0)));
+        mesh->pushVertex(Vertex (pos, Vec3Df (1.0, 0.0, 0.0)));
     }
 
     // Get all the Triangles.
@@ -81,10 +81,10 @@ void MeshFactory::fromOffFile(const string & filename, Mesh & mesh) {
         }
         // Decompose any polygones into triangles.
         for (unsigned int j = 1; j < (polygonSize - 1); j++) {
-            mesh.pushTriangle(Triangle (index[0], index[j], index[j+1]));
+            mesh->pushTriangle(Triangle (index[0], index[j], index[j+1]));
         }
     }
 
     input.close ();
-    mesh.recomputeSmoothVertexNormals(0);
+    mesh->recomputeSmoothVertexNormals(0);
 }

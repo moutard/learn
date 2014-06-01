@@ -6,7 +6,7 @@
 #include <string>
 #include <sstream>
 #include <GLUT/glut.h>
-#include "hgexception.h"
+#include "../utils/hgexception.h"
 using namespace std;
 
 void Mesh::clear () {
@@ -155,6 +155,21 @@ inline void glDrawPoint (const Vertex & v) {
     glDrawPoint (v.getPos (), v.getNormal ());
 }
 
+void Mesh::draw () const {
+    glBegin (GL_TRIANGLES);
+    const Triangle & t = triangles[0];
+    Vertex verticesForTheCurrentTriangles[3];
+    for (unsigned int j = 0; j < 3; j++) {
+        cout << j << endl;
+        verticesForTheCurrentTriangles[j] = vertices[t.getVertex(j)];
+    }
+    for (unsigned int j = 0; j < 3; j++) {
+            glNormalVec3Df (verticesForTheCurrentTriangles[j].getNormal());
+            glVertexVec3Df (verticesForTheCurrentTriangles[j].getPos ());
+    }
+    glEnd ();
+}
+
 void Mesh::renderGL (bool flat) const {
     glBegin (GL_TRIANGLES);
     for (unsigned int i = 0; i < triangles.size (); i++) {
@@ -182,11 +197,11 @@ void Mesh::reserve(unsigned int nbVertices, unsigned int nbTriangles) {
     triangles.reserve(nbTriangles);
 }
 
-void Mesh::pushTriangle(const Triangle & triangle) {
+void Mesh::pushTriangle(Triangle triangle) {
     triangles.push_back(triangle);
 }
 
-void Mesh::pushVertex(const Vertex & vertex) {
+void Mesh::pushVertex(Vertex vertex) {
     vertices.push_back(vertex);
 }
 

@@ -42,7 +42,7 @@
 #define WINDOW_H
 
 #include <QWidget>
-#include "myglwidget.h"
+#include "widgets/myglwidget.h"
 
 QT_BEGIN_NAMESPACE
 class QSlider;

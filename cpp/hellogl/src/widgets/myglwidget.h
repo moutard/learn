@@ -8,7 +8,7 @@ class MyGLWidget : public QGLWidget
 {
     Q_OBJECT
 public:
-    explicit MyGLWidget(Mesh & _mesh, QWidget *parent = 0);
+    explicit MyGLWidget(QWidget *parent = 0);
     ~MyGLWidget();
 signals:
 
@@ -44,7 +44,7 @@ private:
     int zRot;
 
     QPoint lastPos;
-    Mesh & mesh;
+    Mesh * mesh;
 };
 
 #endif // MYGLWIDGET_H
